@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Finden Sie die Agentur, die am besten zu Ihnen passt"
+  },
+  "search": {
+    "locationPlaceholder": "Wo? (Stadt, Kanton)",
+    "agencyNamePlaceholder": "Agenturname",
+    "hint": "Suchen Sie nach Stadt, PLZ oder Kanton, um die entsprechenden Agenturen anzuzeigen.",
+    "allLocations": "Alle Standorte"
+  },
+  "results": {
+    "title": "immobilier.ch Agenturen im Kanton {{canton}}",
+    "showing": "Zeige {{from}}-{{to}} von {{total}} Agenturen",
+    "noResults": "Keine Agenturen gefunden",
+    "noResultsHint": "Versuchen Sie, Ihre Suchkriterien anzupassen"
+  },
+  "card": {
+    "verified": "Verifiziert",
+    "propertiesCount": "{{count}} Wohnobjekte",
+    "toBuy": "Zu kaufen",
+    "toRent": "Zu mieten",
+    "details": "Details",
+    "map": "Karte",
+    "contact": "Kontakt"
+  }
+}

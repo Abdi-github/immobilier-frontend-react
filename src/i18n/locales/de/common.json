@@ -1,0 +1,98 @@
+{
+  "app": {
+    "name": "Immobilier.ch",
+    "tagline": "Schweizer Immobilienplattform"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "rent": "Mieten",
+    "buy": "Kaufen",
+    "agencies": "Agenturen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "login": "Anmelden",
+    "register": "Registrieren",
+    "myAccount": "Mein Konto",
+    "favorites": "Favoriten",
+    "alerts": "Benachrichtigungen",
+    "logout": "Abmelden"
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "select": "Sprache wählen"
+  },
+  "transaction": {
+    "rent": "Mieten",
+    "buy": "Kaufen",
+    "forRent": "Zu vermieten",
+    "forSale": "Zu verkaufen"
+  },
+  "units": {
+    "chf": "CHF",
+    "perMonth": "/Monat",
+    "sqm": "m²",
+    "rooms": "Zimmer",
+    "room": "Zimmer"
+  },
+  "buttons": {
+    "search": "Suchen",
+    "filter": "Filtern",
+    "reset": "Zurücksetzen",
+    "apply": "Anwenden",
+    "showMore": "Mehr anzeigen",
+    "showLess": "Weniger anzeigen",
+    "viewDetails": "Details ansehen",
+    "contact": "Kontaktieren",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "close": "Schliessen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige"
+  },
+  "errors": {
+    "notFound": "Seite nicht gefunden",
+    "notFoundMessage": "Die gesuchte Seite existiert nicht.",
+    "serverError": "Serverfehler",
+    "serverErrorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
+    "networkError": "Netzwerkfehler",
+    "networkErrorMessage": "Bitte überprüfen Sie Ihre Internetverbindung."
+  },
+  "loading": {
+    "default": "Wird geladen...",
+    "properties": "Immobilien werden geladen...",
+    "images": "Bilder werden geladen..."
+  },
+  "footer": {
+    "about": "Über uns",
+    "aboutUs": "Wer wir sind",
+    "careers": "Karriere",
+    "press": "Presse",
+    "support": "Support",
+    "helpCenter": "Hilfecenter",
+    "contactUs": "Kontaktieren Sie uns",
+    "faq": "FAQ",
+    "legal": "Rechtliches",
+    "terms": "Nutzungsbedingungen",
+    "privacy": "Datenschutzrichtlinie",
+    "cookies": "Cookie-Richtlinie",
+    "follow": "Folgen Sie uns",
+    "newsletter": "Newsletter",
+    "subscribeNewsletter": "Abonnieren Sie unseren Newsletter",
+    "emailPlaceholder": "Ihre E-Mail eingeben",
+    "subscribe": "Abonnieren",
+    "copyright": "© {{year}} Immobilier.ch. Alle Rechte vorbehalten."
+  },
+  "pagination": {
+    "page": "Seite",
+    "of": "von",
+    "showing": "Anzeige von",
+    "to": "bis",
+    "results": "Ergebnisse",
+    "first": "Erste",
+    "last": "Letzte"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "listing": {
+    "title": "Immobilien",
+    "results": "{{count}} Immobilien gefunden",
+    "noResults": "Keine Immobilien gefunden",
+    "noResultsMessage": "Versuchen Sie, Ihre Suchfilter anzupassen"
+  },
+  "detail": {
+    "description": "Beschreibung",
+    "features": "Merkmale",
+    "amenities": "Ausstattung",
+    "location": "Standort",
+    "gallery": "Galerie",
+    "contact": "Kontakt",
+    "share": "Teilen",
+    "print": "Drucken",
+    "report": "Inserat melden"
+  },
+  "features": {
+    "rooms": "Zimmer",
+    "bedrooms": "Schlafzimmer",
+    "bathrooms": "Badezimmer",
+    "surface": "Wohnfläche",
+    "floor": "Stockwerk",
+    "yearBuilt": "Baujahr",
+    "availableFrom": "Verfügbar ab",
+    "parking": "Parkplatz"
+  },
+  "card": {
+    "new": "Neu",
+    "featured": "Ausgewählt",
+    "reduced": "Preis reduziert",
+    "viewDetails": "Details ansehen"
+  },
+  "contact": {
+    "title": "Agentur kontaktieren",
+    "name": "Ihr Name",
+    "email": "Ihre E-Mail",
+    "phone": "Ihre Telefonnummer",
+    "message": "Ihre Nachricht",
+    "messagePlaceholder": "Ich interessiere mich für diese Immobilie...",
+    "send": "Nachricht senden",
+    "success": "Nachricht erfolgreich gesendet",
+    "error": "Nachricht konnte nicht gesendet werden"
+  },
+  "agency": {
+    "title": "Angeboten von",
+    "viewProfile": "Agenturprofil ansehen",
+    "allListings": "Alle Inserate ansehen"
+  },
+  "similar": {
+    "title": "Ähnliche Immobilien",
+    "viewAll": "Alle ähnlichen ansehen"
+  },
+  "proximity": {
+    "title": "In der Nähe",
+    "publicTransport": "Öffentliche Verkehrsmittel",
+    "schools": "Schulen",
+    "shopping": "Einkaufsmöglichkeiten",
+    "restaurants": "Restaurants"
+  },
+  "form": {
+    "createTitle": "Neues Inserat erstellen",
+    "editTitle": "Inserat bearbeiten",
+    "steps": {
+      "basicInfo": "Grundinfos",
+      "location": "Standort",
+      "details": "Details",
+      "amenities": "Ausstattung",
+      "photos": "Fotos",
+      "review": "Überprüfung"
+    },
+    "basicInfo": {
+      "title": "Grundinformationen",
+      "description": "Beginnen Sie mit den wesentlichen Details Ihrer Immobilie",
+      "transactionType": "Transaktionstyp",
+      "transactionTypeHint": "Verkaufen oder vermieten Sie?",
+      "rent": "Zu vermieten",
+      "buy": "Zu verkaufen",
+      "category": "Immobilientyp",
+      "categoryPlaceholder": "Wählen Sie einen Immobilientyp",
+      "propertyTitle": "Inseratstitel",
+      "propertyTitlePlaceholder": "z.B. Schöne 3-Zimmer-Wohnung in Zürich",
+      "propertyTitleHint": "Erstellen Sie einen attraktiven Titel für Ihr Inserat",
+      "propertyDescription": "Beschreibung",
+      "propertyDescriptionPlaceholder": "Beschreiben Sie Ihre Immobilie im Detail...",
+      "propertyDescriptionHint": "Fügen Sie wichtige Merkmale, Zustand und Besonderheiten hinzu",
+      "sourceLanguage": "Inseratssprache",
+      "sourceLanguageHint": "Wir übersetzen automatisch in andere Sprachen"
+    },
+    "location": {
+      "title": "Standortdetails",
+      "description": "Helfen Sie Käufern oder Mietern, Ihre Immobilie zu finden",
+      "canton": "Kanton",
+      "cantonPlaceholder": "Wählen Sie einen Kanton",
+      "city": "Stadt",
+      "cityPlaceholder": "Wählen Sie eine Stadt",
+      "selectCantonFirst": "Bitte wählen Sie zuerst einen Kanton",
+      "address": "Adresse",
+      "addressPlaceholder": "z.B. Bahnhofstrasse 10",
+      "postalCode": "Postleitzahl",
+      "postalCodePlaceholder": "z.B. 8001"
+    },
+    "details": {
+      "title": "Immobiliendetails",
+      "description": "Geben Sie Spezifikationen und Preisinformationen an",
+      "price": "Preis",
+      "pricePlaceholder": "z.B. 2500",
+      "priceHintRent": "Monatliche Miete in CHF",
+      "priceHintBuy": "Verkaufspreis in CHF",
+      "additionalCosts": "Nebenkosten",
+      "additionalCostsPlaceholder": "z.B. 200",
+      "additionalCostsHint": "Monatliche Kosten (Wasser, Strom, Wartung usw.)",
+      "rooms": "Anzahl Zimmer",
+      "roomsPlaceholder": "z.B. 3.5",
+      "roomsHint": "Inklusive halbe Zimmer (z.B. 3.5 für 3 Zimmer + 1 kleines Zimmer)",
+      "surface": "Wohnfläche",
+      "surfacePlaceholder": "z.B. 85",
+      "surfaceHint": "Gesamte Wohnfläche in Quadratmetern",
+      "floor": "Stockwerk",
+      "floorPlaceholder": "z.B. 2",
+      "floorHint": "Erdgeschoss = 0",
+      "yearBuilt": "Baujahr",
+      "yearBuiltPlaceholder": "z.B. 1990",
+      "availableFrom": "Verfügbar ab",
+      "availableFromHint": "Wann kann der neue Eigentümer/Mieter einziehen?",
+      "immediatelyAvailable": "Sofort verfügbar"
+    },
+    "amenities": {
+      "title": "Ausstattung und Merkmale",
+      "description": "Wählen Sie alle Ausstattungsmerkmale Ihrer Immobilie",
+      "noAmenities": "Keine Ausstattung verfügbar",
+      "selectedCount": "{{count}} Ausstattungsmerkmale ausgewählt",
+      "selectAll": "Alle auswählen",
+      "deselectAll": "Alle abwählen"
+    },
+    "photos": {
+      "title": "Immobilienfotos",
+      "description": "Laden Sie hochwertige Fotos hoch, um mehr Interesse zu wecken",
+      "dropzone": "Fotos hierher ziehen oder klicken zum Auswählen",
+      "dropzoneHint": "JPEG, PNG oder WebP • Max 5 MB pro Bild • Bis zu 20 Bilder",
+      "uploading": "Wird hochgeladen...",
+      "uploadError": "Bild konnte nicht hochgeladen werden",
+      "removeImage": "Bild entfernen",
+      "setPrimary": "Als Hauptbild festlegen",
+      "primaryImage": "Hauptbild",
+      "noPhotos": "Noch keine Fotos hinzugefügt",
+      "addPhotos": "Fügen Sie Ihr erstes Foto hinzu",
+      "imageCount": "{{count}} von {{max}} Fotos",
+      "tooLarge": "Datei zu groß (max 5 MB)",
+      "invalidType": "Ungültiger Dateityp. Verwenden Sie JPEG, PNG oder WebP",
+      "maxReached": "Maximale Anzahl von Bildern erreicht"
+    },
+    "review": {
+      "title": "Überprüfen Sie Ihr Inserat",
+      "description": "Bitte überprüfen Sie alle Details vor dem Absenden",
+      "basicInfo": "Grundinformationen",
+      "location": "Standort",
+      "details": "Immobiliendetails",
+      "amenities": "Ausstattung",
+      "photos": "Fotos",
+      "edit": "Bearbeiten",
+      "noAmenities": "Keine Ausstattung ausgewählt",
+      "noPhotos": "Keine Fotos hochgeladen",
+      "transactionType": "Transaktion",
+      "category": "Typ",
+      "language": "Sprache",
+      "price": "Preis",
+      "additionalCosts": "Nebenkosten",
+      "rooms": "Zimmer",
+      "surface": "Fläche",
+      "floor": "Stockwerk",
+      "yearBuilt": "Baujahr",
+      "availableFrom": "Verfügbar ab",
+      "notSpecified": "Nicht angegeben",
+      "immediately": "Sofort",
+      "submitInfo": "Ihr Inserat wird zur Überprüfung eingereicht. Nach der Genehmigung wird es veröffentlicht und für alle Benutzer sichtbar.",
+      "draftInfo": "Als Entwurf speichern, um später fortzufahren. Ihr Fortschritt wird gespeichert."
+    },
+    "actions": {
+      "next": "Weiter",
+      "previous": "Zurück",
+      "saveDraft": "Als Entwurf speichern",
+      "submit": "Zur Überprüfung einreichen",
+      "submitting": "Wird eingereicht...",
+      "cancel": "Abbrechen",
+      "preview": "Vorschau"
+    },
+    "validation": {
+      "required": "Dieses Feld ist erforderlich",
+      "selectCategory": "Bitte wählen Sie einen Immobilientyp",
+      "selectCanton": "Bitte wählen Sie einen Kanton",
+      "selectCity": "Bitte wählen Sie eine Stadt",
+      "enterTitle": "Bitte geben Sie einen Titel ein",
+      "enterDescription": "Bitte geben Sie eine Beschreibung ein",
+      "titleMinLength": "Der Titel muss mindestens 10 Zeichen lang sein",
+      "descriptionMinLength": "Die Beschreibung muss mindestens 50 Zeichen lang sein",
+      "enterAddress": "Bitte geben Sie die Adresse ein",
+      "enterPrice": "Bitte geben Sie einen Preis ein",
+      "invalidPrice": "Bitte geben Sie einen gültigen Preis ein",
+      "minOnePhoto": "Bitte laden Sie mindestens ein Foto hoch"
+    },
+    "success": {
+      "created": "Inserat erfolgreich erstellt!",
+      "createdDescription": "Ihr Inserat wurde zur Überprüfung eingereicht.",
+      "updated": "Inserat erfolgreich aktualisiert!",
+      "draftSaved": "Entwurf erfolgreich gespeichert!"
+    },
+    "error": {
+      "createFailed": "Inserat konnte nicht erstellt werden",
+      "updateFailed": "Inserat konnte nicht aktualisiert werden",
+      "uploadFailed": "Bilder konnten nicht hochgeladen werden",
+      "tryAgain": "Bitte versuchen Sie es später erneut"
+    }
+  }
+}

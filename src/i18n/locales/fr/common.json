@@ -1,0 +1,98 @@
+{
+  "app": {
+    "name": "Immobilier.ch",
+    "tagline": "Plateforme immobilière suisse"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "rent": "Louer",
+    "buy": "Acheter",
+    "agencies": "Agences",
+    "about": "À propos",
+    "contact": "Contact",
+    "login": "Connexion",
+    "register": "Inscription",
+    "myAccount": "Mon compte",
+    "favorites": "Favoris",
+    "alerts": "Alertes",
+    "logout": "Déconnexion"
+  },
+  "language": {
+    "en": "English",
+    "fr": "Français",
+    "de": "Deutsch",
+    "it": "Italiano",
+    "select": "Choisir la langue"
+  },
+  "transaction": {
+    "rent": "Louer",
+    "buy": "Acheter",
+    "forRent": "À louer",
+    "forSale": "À vendre"
+  },
+  "units": {
+    "chf": "CHF",
+    "perMonth": "/mois",
+    "sqm": "m²",
+    "rooms": "pièces",
+    "room": "pièce"
+  },
+  "buttons": {
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "reset": "Réinitialiser",
+    "apply": "Appliquer",
+    "showMore": "Voir plus",
+    "showLess": "Voir moins",
+    "viewDetails": "Voir détails",
+    "contact": "Contacter",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "close": "Fermer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent"
+  },
+  "errors": {
+    "notFound": "Page non trouvée",
+    "notFoundMessage": "La page que vous recherchez n'existe pas.",
+    "serverError": "Erreur serveur",
+    "serverErrorMessage": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    "networkError": "Erreur réseau",
+    "networkErrorMessage": "Veuillez vérifier votre connexion internet."
+  },
+  "loading": {
+    "default": "Chargement...",
+    "properties": "Chargement des propriétés...",
+    "images": "Chargement des images..."
+  },
+  "footer": {
+    "about": "À propos",
+    "aboutUs": "Qui sommes-nous",
+    "careers": "Carrières",
+    "press": "Presse",
+    "support": "Support",
+    "helpCenter": "Centre d'aide",
+    "contactUs": "Nous contacter",
+    "faq": "FAQ",
+    "legal": "Légal",
+    "terms": "Conditions d'utilisation",
+    "privacy": "Politique de confidentialité",
+    "cookies": "Politique des cookies",
+    "follow": "Suivez-nous",
+    "newsletter": "Newsletter",
+    "subscribeNewsletter": "Abonnez-vous à notre newsletter",
+    "emailPlaceholder": "Entrez votre email",
+    "subscribe": "S'abonner",
+    "copyright": "© {{year}} Immobilier.ch. Tous droits réservés."
+  },
+  "pagination": {
+    "page": "Page",
+    "of": "sur",
+    "showing": "Affichage de",
+    "to": "à",
+    "results": "résultats",
+    "first": "Première",
+    "last": "Dernière"
+  }
+}

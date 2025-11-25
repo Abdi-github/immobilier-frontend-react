@@ -1,0 +1,266 @@
+{
+  "dashboard": {
+    "nav": {
+      "profile": "Profil",
+      "favorites": "Favoriten",
+      "alerts": "Benachrichtigungen",
+      "inquiries": "Meine Anfragen",
+      "settings": "Einstellungen",
+      "myProperties": "Meine Immobilien",
+      "createProperty": "Immobilie inserieren",
+      "backToSite": "Zurück zur Seite",
+      "logout": "Abmelden"
+    }
+  },
+  "profile": {
+    "title": "Mein Profil",
+    "description": "Verwalten Sie Ihre persönlichen Daten und Kontoeinstellungen",
+    "personalInfo": "Persönliche Informationen",
+    "personalInfoDescription": "Aktualisieren Sie Ihre persönlichen Daten und Ihr Profilbild",
+    "accountInfo": "Kontoinformationen",
+    "accountInfoDescription": "Zeigen Sie Ihre Kontodetails und den Status an",
+    "editProfile": "Profil bearbeiten",
+    "updateSuccess": "Profil erfolgreich aktualisiert",
+    "updateError": "Profil konnte nicht aktualisiert werden",
+    "emailVerified": "Verifiziert",
+    "emailReadOnly": "E-Mail kann nicht geändert werden",
+    "notProvided": "Nicht angegeben",
+    "avatar": {
+      "invalidType": "Bitte laden Sie eine Bilddatei hoch",
+      "tooLarge": "Das Bild muss kleiner als 5 MB sein",
+      "uploadSuccess": "Profilbild aktualisiert",
+      "uploadError": "Bild konnte nicht hochgeladen werden"
+    },
+    "fields": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "memberSince": "Mitglied seit",
+      "accountStatus": "Kontostatus",
+      "preferredLanguage": "Bevorzugte Sprache",
+      "agency": "Agentur"
+    },
+    "userType": {
+      "endUser": "Privatperson",
+      "owner": "Immobilieneigentümer",
+      "agent": "Makler",
+      "agencyAdmin": "Agenturadministrator",
+      "platformAdmin": "Plattformadministrator",
+      "superAdmin": "Superadministrator"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv"
+    }
+  },
+  "settings": {
+    "title": "Kontoeinstellungen",
+    "description": "Verwalten Sie Ihr Passwort, Spracheinstellungen und Benachrichtigungen",
+    "language": {
+      "title": "Spracheinstellungen",
+      "description": "Wählen Sie Ihre bevorzugte Sprache für die Benutzeroberfläche und Kommunikation",
+      "select": "Oberflächensprache",
+      "updateSuccess": "Spracheinstellung aktualisiert",
+      "updateError": "Sprache konnte nicht aktualisiert werden"
+    },
+    "password": {
+      "title": "Passwort ändern",
+      "description": "Aktualisieren Sie Ihr Passwort, um Ihr Konto sicher zu halten",
+      "current": "Aktuelles Passwort",
+      "new": "Neues Passwort",
+      "confirm": "Neues Passwort bestätigen",
+      "change": "Passwort ändern",
+      "requirements": "Mindestens 8 Zeichen mit Groß-, Kleinbuchstaben und Zahl",
+      "changeSuccess": "Passwort erfolgreich geändert",
+      "changeError": "Passwort konnte nicht geändert werden"
+    },
+    "notifications": {
+      "title": "E-Mail-Benachrichtigungen",
+      "description": "Wählen Sie, welche E-Mails Sie erhalten möchten",
+      "newProperties": "Neue passende Immobilien",
+      "newPropertiesDesc": "Benachrichtigung bei neuen Immobilien, die Ihren Kriterien entsprechen",
+      "priceChanges": "Preisänderungen",
+      "priceChangesDesc": "Benachrichtigung bei Preisänderungen Ihrer Favoriten",
+      "favoritesUpdates": "Favoriten-Updates",
+      "favoritesUpdatesDesc": "Benachrichtigung über Änderungen an Ihren gespeicherten Immobilien",
+      "newsletter": "Newsletter",
+      "newsletterDesc": "Erhalten Sie unseren wöchentlichen Newsletter mit Markteinblicken",
+      "updateSuccess": "Benachrichtigungseinstellungen aktualisiert",
+      "updateError": "Einstellungen konnten nicht aktualisiert werden"
+    },
+    "danger": {
+      "title": "Gefahrenzone",
+      "description": "Unwiderrufliche Aktionen für Ihr Konto",
+      "deleteAccount": "Konto löschen",
+      "deleteConfirmTitle": "Sind Sie absolut sicher?",
+      "deleteConfirmDescription": "Diese Aktion kann nicht rückgängig gemacht werden. Ihr Konto wird dauerhaft gelöscht und alle Ihre Daten werden von unseren Servern entfernt.",
+      "deleteConfirm": "Ja, mein Konto löschen"
+    }
+  },
+  "favorites": {
+    "title": "Meine Favoriten",
+    "description": "Immobilien, die Sie für später gespeichert haben",
+    "count": "{{count}} gespeicherte Immobilien",
+    "count_one": "{{count}} gespeicherte Immobilie",
+    "count_other": "{{count}} gespeicherte Immobilien",
+    "browseMore": "Immobilien durchsuchen",
+    "viewProperty": "Immobilie ansehen",
+    "savedOn": "Gespeichert am {{date}}",
+    "propertyUnavailable": "Nicht mehr verfügbar",
+    "removeSuccess": "Immobilie aus Favoriten entfernt",
+    "removeError": "Fehler beim Entfernen aus Favoriten",
+    "removeConfirmTitle": "Aus Favoriten entfernen?",
+    "removeConfirmDescription": "Diese Immobilie wird aus Ihrer gespeicherten Liste entfernt.",
+    "removeConfirm": "Entfernen",
+    "empty": {
+      "title": "Noch keine Favoriten",
+      "description": "Speichern Sie Immobilien, die Ihnen gefallen, um sie später leicht zu finden",
+      "browseProperties": "Immobilien durchsuchen"
+    }
+  },
+  "alerts": {
+    "title": "Meine Benachrichtigungen",
+    "description": "Erhalten Sie Benachrichtigungen, wenn neue Immobilien Ihren Kriterien entsprechen",
+    "createNew": "Benachrichtigung erstellen",
+    "createTitle": "Neue Benachrichtigung erstellen",
+    "createDescription": "Richten Sie eine Benachrichtigung ein, um über neue passende Immobilien informiert zu werden",
+    "editTitle": "Benachrichtigung bearbeiten",
+    "editDescription": "Aktualisieren Sie Ihre Benachrichtigungseinstellungen",
+    "createSuccess": "Benachrichtigung erfolgreich erstellt",
+    "updateSuccess": "Benachrichtigung erfolgreich aktualisiert",
+    "deleteSuccess": "Benachrichtigung gelöscht",
+    "activateSuccess": "Benachrichtigung aktiviert",
+    "pauseSuccess": "Benachrichtigung pausiert",
+    "deleteError": "Fehler beim Löschen der Benachrichtigung",
+    "toggleError": "Fehler beim Aktualisieren der Benachrichtigung",
+    "active": "Aktiv",
+    "paused": "Pausiert",
+    "status": {
+      "paused": "Pausiert"
+    },
+    "matchCount": "{{count}} Treffer",
+    "matchCount_one": "{{count}} Treffer",
+    "matchCount_other": "{{count}} Treffer",
+    "createdAt": "Erstellt {{date}}",
+    "lastSent": "Zuletzt gesendet {{date}}",
+    "deleteConfirmTitle": "Diese Benachrichtigung löschen?",
+    "deleteConfirmDescription": "Diese Benachrichtigung wird dauerhaft gelöscht und Sie erhalten keine weiteren Benachrichtigungen dafür.",
+    "frequency": {
+      "instant": "Sofortige Benachrichtigungen",
+      "daily": "Tägliche Zusammenfassung",
+      "weekly": "Wöchentliche Zusammenfassung"
+    },
+    "filters": {
+      "citySet": "Stadt ausgewählt",
+      "cantonSet": "Kanton ausgewählt",
+      "from": "Von",
+      "to": "Bis",
+      "rooms": "Zimmer"
+    },
+    "form": {
+      "name": "Name der Benachrichtigung",
+      "namePlaceholder": "z.B. Wohnungen in Zürich",
+      "frequency": "Benachrichtigungshäufigkeit",
+      "selectFrequency": "Häufigkeit auswählen",
+      "filters": "Suchfilter",
+      "transactionType": "Transaktionstyp",
+      "anyTransaction": "Jede Transaktion",
+      "category": "Immobilientyp",
+      "anyCategory": "Jeder Typ",
+      "location": "Standort",
+      "anyLocation": "Überall in der Schweiz",
+      "priceMin": "Mindestpreis (CHF)",
+      "priceMax": "Höchstpreis (CHF)",
+      "roomsMin": "Min. Zimmer",
+      "roomsMax": "Max. Zimmer",
+      "surfaceMin": "Min. Fläche (m²)",
+      "surfaceMax": "Max. Fläche (m²)",
+      "noLimit": "Kein Limit",
+      "create": "Benachrichtigung erstellen",
+      "update": "Änderungen speichern"
+    },
+    "empty": {
+      "title": "Noch keine Benachrichtigungen",
+      "description": "Erstellen Sie eine Benachrichtigung, um über neue passende Immobilien informiert zu werden",
+      "createFirst": "Erste Benachrichtigung erstellen"
+    }
+  },
+  "common": {
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "month": "Monat",
+    "transaction": {
+      "rent": "Zu vermieten",
+      "buy": "Zu verkaufen"
+    }
+  },
+  "myProperties": {
+    "title": "Meine Immobilien",
+    "subtitle": "Verwalten Sie Ihre Immobilieninserate",
+    "createNew": "Neues Inserat erstellen",
+    "createFirst": "Inserat erstellen",
+    "untitled": "Unbenannte Immobilie",
+    "noImage": "Kein Bild",
+    "rent": "Zu vermieten",
+    "sale": "Zu verkaufen",
+    "page": "Seite",
+    "searchPlaceholder": "Immobilien suchen...",
+    "sortBy": "Sortieren nach",
+    "updating": "Aktualisierung...",
+    "showing": "Anzeige {{from}}-{{to}} von {{total}}",
+    "previous": "Zurück",
+    "next": "Weiter",
+    "retry": "Erneut versuchen",
+    "clearFilter": "Filter löschen",
+    "stats": {
+      "total": "Alle",
+      "draft": "Entwürfe",
+      "pending": "Ausstehend",
+      "approved": "Genehmigt",
+      "published": "Veröffentlicht",
+      "rejected": "Abgelehnt",
+      "archived": "Archiviert"
+    },
+    "status": {
+      "draft": "Entwurf",
+      "pending": "Ausstehend",
+      "approved": "Genehmigt",
+      "published": "Veröffentlicht",
+      "rejected": "Abgelehnt",
+      "archived": "Archiviert"
+    },
+    "sort": {
+      "newest": "Neueste zuerst",
+      "oldest": "Älteste zuerst",
+      "priceHigh": "Preis: hoch bis niedrig",
+      "priceLow": "Preis: niedrig bis hoch",
+      "recentlyUpdated": "Kürzlich aktualisiert"
+    },
+    "actions": {
+      "view": "Öffentliche Seite anzeigen",
+      "edit": "Bearbeiten",
+      "submit": "Zur Genehmigung einreichen",
+      "archive": "Archivieren",
+      "delete": "Löschen"
+    },
+    "emptyTitle": "Noch keine Immobilien",
+    "emptyDescription": "Erstellen Sie Ihr erstes Inserat. Es dauert nur wenige Minuten!",
+    "noFilteredResults": "Keine Immobilien für diesen Filter gefunden",
+    "tryDifferentFilter": "Versuchen Sie einen anderen Filter oder erstellen Sie ein neues Inserat",
+    "errorTitle": "Immobilien konnten nicht geladen werden",
+    "errorDescription": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "confirmDelete": "Sind Sie sicher, dass Sie diese Immobilie löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+    "deleteSuccess": "Immobilie erfolgreich gelöscht",
+    "deleteError": "Immobilie konnte nicht gelöscht werden",
+    "submitSuccess": "Immobilie zur Genehmigung eingereicht",
+    "submitError": "Immobilie konnte nicht eingereicht werden",
+    "confirmArchive": "Sind Sie sicher, dass Sie diese Immobilie archivieren möchten?",
+    "archiveSuccess": "Immobilie erfolgreich archiviert",
+    "archiveError": "Immobilie konnte nicht archiviert werden"
+  }
+}

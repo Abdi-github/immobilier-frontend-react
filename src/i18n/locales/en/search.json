@@ -1,0 +1,74 @@
+{
+  "title": "Search Properties",
+  "filters": {
+    "title": "Filters",
+    "category": "Property type",
+    "allCategories": "All types",
+    "location": "Location",
+    "canton": "Canton",
+    "allCantons": "All cantons",
+    "city": "City",
+    "allCities": "All cities",
+    "price": "Price",
+    "priceMin": "Min price",
+    "priceMax": "Max price",
+    "rooms": "Rooms",
+    "roomsMin": "Min rooms",
+    "roomsMax": "Max rooms",
+    "surface": "Surface area",
+    "surfaceMin": "Min surface",
+    "surfaceMax": "Max surface",
+    "amenities": "Amenities",
+    "moreFilters": "More filters",
+    "lessFilters": "Less filters",
+    "activeFilters": "Active filters: {{count}}",
+    "clearAll": "Clear all"
+  },
+  "sort": {
+    "label": "Sort by",
+    "newest": "Newest first",
+    "oldest": "Oldest first",
+    "priceAsc": "Price: Low to High",
+    "priceDesc": "Price: High to Low",
+    "roomsAsc": "Rooms: Low to High",
+    "roomsDesc": "Rooms: High to Low"
+  },
+  "view": {
+    "grid": "Grid view",
+    "list": "List view",
+    "map": "Map view"
+  },
+  "priceRanges": {
+    "rent": {
+      "any": "Any price",
+      "under1000": "Under CHF 1,000",
+      "1000to2000": "CHF 1,000 - 2,000",
+      "2000to3000": "CHF 2,000 - 3,000",
+      "3000to5000": "CHF 3,000 - 5,000",
+      "over5000": "Over CHF 5,000"
+    },
+    "buy": {
+      "any": "Any price",
+      "under500k": "Under CHF 500,000",
+      "500kto1m": "CHF 500,000 - 1M",
+      "1mto2m": "CHF 1M - 2M",
+      "2mto5m": "CHF 2M - 5M",
+      "over5m": "Over CHF 5M"
+    }
+  },
+  "roomOptions": {
+    "any": "Any",
+    "1": "1+",
+    "2": "2+",
+    "3": "3+",
+    "4": "4+",
+    "5": "5+"
+  },
+  "results": {
+    "found": "{{count}} property found",
+    "found_plural": "{{count}} properties found",
+    "showing": "Showing {{from}} - {{to}} of {{total}}",
+    "empty": "No properties match your criteria",
+    "emptyHint": "Try adjusting your filters or expanding your search area"
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "listing": {
+    "title": "Propriétés",
+    "results": "{{count}} propriétés trouvées",
+    "noResults": "Aucune propriété trouvée",
+    "noResultsMessage": "Essayez d'ajuster vos filtres de recherche"
+  },
+  "detail": {
+    "description": "Description",
+    "features": "Caractéristiques",
+    "amenities": "Équipements",
+    "location": "Emplacement",
+    "gallery": "Galerie",
+    "contact": "Contact",
+    "share": "Partager",
+    "print": "Imprimer",
+    "report": "Signaler l'annonce"
+  },
+  "features": {
+    "rooms": "Pièces",
+    "bedrooms": "Chambres",
+    "bathrooms": "Salles de bain",
+    "surface": "Surface habitable",
+    "floor": "Étage",
+    "yearBuilt": "Année de construction",
+    "availableFrom": "Disponible dès",
+    "parking": "Parking"
+  },
+  "card": {
+    "new": "Nouveau",
+    "featured": "En vedette",
+    "reduced": "Prix réduit",
+    "viewDetails": "Voir détails"
+  },
+  "contact": {
+    "title": "Contacter l'agence",
+    "name": "Votre nom",
+    "email": "Votre email",
+    "phone": "Votre téléphone",
+    "message": "Votre message",
+    "messagePlaceholder": "Je suis intéressé par cette propriété...",
+    "send": "Envoyer le message",
+    "success": "Message envoyé avec succès",
+    "error": "Échec de l'envoi du message"
+  },
+  "agency": {
+    "title": "Proposé par",
+    "viewProfile": "Voir le profil de l'agence",
+    "allListings": "Voir toutes les annonces"
+  },
+  "similar": {
+    "title": "Propriétés similaires",
+    "viewAll": "Voir tous les similaires"
+  },
+  "proximity": {
+    "title": "À proximité",
+    "publicTransport": "Transports publics",
+    "schools": "Écoles",
+    "shopping": "Commerces",
+    "restaurants": "Restaurants"
+  },
+  "form": {
+    "createTitle": "Créer une nouvelle annonce",
+    "editTitle": "Modifier l'annonce",
+    "steps": {
+      "basicInfo": "Infos de base",
+      "location": "Emplacement",
+      "details": "Détails",
+      "amenities": "Équipements",
+      "photos": "Photos",
+      "review": "Vérification"
+    },
+    "basicInfo": {
+      "title": "Informations de base",
+      "description": "Commencez par entrer les détails essentiels de votre bien",
+      "transactionType": "Type de transaction",
+      "transactionTypeHint": "Vendez-vous ou louez-vous ?",
+      "rent": "À louer",
+      "buy": "À vendre",
+      "category": "Type de bien",
+      "categoryPlaceholder": "Sélectionnez un type de bien",
+      "propertyTitle": "Titre de l'annonce",
+      "propertyTitlePlaceholder": "ex. Bel appartement 3 pièces à Zurich",
+      "propertyTitleHint": "Créez un titre attractif pour votre annonce",
+      "propertyDescription": "Description",
+      "propertyDescriptionPlaceholder": "Décrivez votre bien en détail...",
+      "propertyDescriptionHint": "Incluez les caractéristiques clés, l'état et ce qui le rend spécial",
+      "sourceLanguage": "Langue de l'annonce",
+      "sourceLanguageHint": "Nous traduirons automatiquement dans les autres langues"
+    },
+    "location": {
+      "title": "Détails de l'emplacement",
+      "description": "Aidez les acheteurs ou locataires à trouver votre bien",
+      "canton": "Canton",
+      "cantonPlaceholder": "Sélectionnez un canton",
+      "city": "Ville",
+      "cityPlaceholder": "Sélectionnez une ville",
+      "selectCantonFirst": "Veuillez d'abord sélectionner un canton",
+      "address": "Adresse",
+      "addressPlaceholder": "ex. Bahnhofstrasse 10",
+      "postalCode": "Code postal",
+      "postalCodePlaceholder": "ex. 8001"
+    },
+    "details": {
+      "title": "Détails du bien",
+      "description": "Fournissez les spécifications et les informations tarifaires",
+      "price": "Prix",
+      "pricePlaceholder": "ex. 2500",
+      "priceHintRent": "Loyer mensuel en CHF",
+      "priceHintBuy": "Prix de vente en CHF",
+      "additionalCosts": "Charges",
+      "additionalCostsPlaceholder": "ex. 200",
+      "additionalCostsHint": "Charges mensuelles (eau, électricité, entretien, etc.)",
+      "rooms": "Nombre de pièces",
+      "roomsPlaceholder": "ex. 3.5",
+      "roomsHint": "Incluez les demi-pièces (ex. 3.5 pour 3 pièces + 1 petite pièce)",
+      "surface": "Surface habitable",
+      "surfacePlaceholder": "ex. 85",
+      "surfaceHint": "Surface habitable totale en mètres carrés",
+      "floor": "Étage",
+      "floorPlaceholder": "ex. 2",
+      "floorHint": "Rez-de-chaussée = 0",
+      "yearBuilt": "Année de construction",
+      "yearBuiltPlaceholder": "ex. 1990",
+      "availableFrom": "Disponible dès",
+      "availableFromHint": "Quand le nouveau propriétaire/locataire peut-il emménager ?",
+      "immediatelyAvailable": "Disponible immédiatement"
+    },
+    "amenities": {
+      "title": "Équipements et caractéristiques",
+      "description": "Sélectionnez tous les équipements et caractéristiques de votre bien",
+      "noAmenities": "Aucun équipement disponible",
+      "selectedCount": "{{count}} équipements sélectionnés",
+      "selectAll": "Tout sélectionner",
+      "deselectAll": "Tout désélectionner"
+    },
+    "photos": {
+      "title": "Photos du bien",
+      "description": "Téléchargez des photos de qualité pour attirer plus d'intérêt",
+      "dropzone": "Glissez-déposez des photos ici, ou cliquez pour sélectionner",
+      "dropzoneHint": "JPEG, PNG ou WebP • Max 5 Mo par image • Jusqu'à 20 images",
+      "uploading": "Téléchargement...",
+      "uploadError": "Échec du téléchargement de l'image",
+      "removeImage": "Supprimer l'image",
+      "setPrimary": "Définir comme principale",
+      "primaryImage": "Image principale",
+      "noPhotos": "Aucune photo ajoutée",
+      "addPhotos": "Ajoutez votre première photo",
+      "imageCount": "{{count}} sur {{max}} photos",
+      "tooLarge": "Fichier trop volumineux (max 5 Mo)",
+      "invalidType": "Type de fichier invalide. Utilisez JPEG, PNG ou WebP",
+      "maxReached": "Nombre maximum d'images atteint"
+    },
+    "review": {
+      "title": "Vérifiez votre annonce",
+      "description": "Veuillez vérifier tous les détails avant de soumettre",
+      "basicInfo": "Informations de base",
+      "location": "Emplacement",
+      "details": "Détails du bien",
+      "amenities": "Équipements",
+      "photos": "Photos",
+      "edit": "Modifier",
+      "noAmenities": "Aucun équipement sélectionné",
+      "noPhotos": "Aucune photo téléchargée",
+      "transactionType": "Transaction",
+      "category": "Type",
+      "language": "Langue",
+      "price": "Prix",
+      "additionalCosts": "Charges",
+      "rooms": "Pièces",
+      "surface": "Surface",
+      "floor": "Étage",
+      "yearBuilt": "Année de construction",
+      "availableFrom": "Disponible dès",
+      "notSpecified": "Non spécifié",
+      "immediately": "Immédiatement",
+      "submitInfo": "Votre annonce sera soumise pour vérification. Une fois approuvée, elle sera publiée et visible par tous les utilisateurs.",
+      "draftInfo": "Enregistrez comme brouillon pour continuer plus tard. Votre progression sera sauvegardée."
+    },
+    "actions": {
+      "next": "Suivant",
+      "previous": "Précédent",
+      "saveDraft": "Enregistrer comme brouillon",
+      "submit": "Soumettre pour vérification",
+      "submitting": "Soumission...",
+      "cancel": "Annuler",
+      "preview": "Aperçu"
+    },
+    "validation": {
+      "required": "Ce champ est obligatoire",
+      "selectCategory": "Veuillez sélectionner un type de bien",
+      "selectCanton": "Veuillez sélectionner un canton",
+      "selectCity": "Veuillez sélectionner une ville",
+      "enterTitle": "Veuillez entrer un titre",
+      "enterDescription": "Veuillez entrer une description",
+      "titleMinLength": "Le titre doit contenir au moins 10 caractères",
+      "descriptionMinLength": "La description doit contenir au moins 50 caractères",
+      "enterAddress": "Veuillez entrer l'adresse",
+      "enterPrice": "Veuillez entrer un prix",
+      "invalidPrice": "Veuillez entrer un prix valide",
+      "minOnePhoto": "Veuillez télécharger au moins une photo"
+    },
+    "success": {
+      "created": "Annonce créée avec succès !",
+      "createdDescription": "Votre annonce a été soumise pour vérification.",
+      "updated": "Annonce mise à jour avec succès !",
+      "draftSaved": "Brouillon enregistré avec succès !"
+    },
+    "error": {
+      "createFailed": "Échec de la création de l'annonce",
+      "updateFailed": "Échec de la mise à jour de l'annonce",
+      "uploadFailed": "Échec du téléchargement des images",
+      "tryAgain": "Veuillez réessayer plus tard"
+    }
+  }
+}

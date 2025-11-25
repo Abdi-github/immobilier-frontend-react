@@ -1,0 +1,261 @@
+{
+  "list": {
+    "title": "Properties",
+    "results": "{{count}} properties found",
+    "resultsCount": "{{count}} properties found",
+    "noResults": "No properties found",
+    "noResultsHint": "Try adjusting your search filters",
+    "loading": "Loading properties...",
+    "searchPlaceholder": "Search properties..."
+  },
+  "listing": {
+    "title": "Properties",
+    "results": "{{count}} properties found",
+    "noResults": "No properties found",
+    "noResultsMessage": "Try adjusting your search filters"
+  },
+  "filters": {
+    "title": "Filters",
+    "transactionType": "Transaction Type",
+    "category": "Property Type",
+    "location": "Location",
+    "priceRange": "Price Range",
+    "rooms": "Rooms",
+    "surface": "Surface"
+  },
+  "sort": {
+    "placeholder": "Sort by"
+  },
+  "sortOptions": {
+    "newest": "Newest first",
+    "oldest": "Oldest first",
+    "priceLowHigh": "Price: Low to High",
+    "priceHighLow": "Price: High to Low",
+    "surfaceLargest": "Largest surface",
+    "mostRooms": "Most rooms"
+  },
+  "detail": {
+    "description": "Description",
+    "features": "Features",
+    "amenities": "Amenities",
+    "location": "Location",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "share": "Share",
+    "print": "Print",
+    "report": "Report listing",
+    "price": "Price",
+    "additionalCosts": "additional costs",
+    "surface": "Surface",
+    "address": "Address",
+    "city": "City",
+    "canton": "Canton",
+    "postalCode": "Postal Code",
+    "nearby": "Nearby",
+    "publishedOn": "Published on",
+    "reference": "Reference",
+    "notFound": "Property not found",
+    "notFoundDescription": "The property you are looking for does not exist or has been removed.",
+    "backToList": "Back to properties"
+  },
+  "features": {
+    "rooms": "Rooms",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "surface": "Living area",
+    "floor": "Floor",
+    "yearBuilt": "Year built",
+    "availableFrom": "Available from",
+    "parking": "Parking"
+  },
+  "card": {
+    "new": "New",
+    "featured": "Featured",
+    "reduced": "Price reduced",
+    "viewDetails": "View details"
+  },
+  "contact": {
+    "title": "Contact about this property",
+    "listedBy": "Property listed by",
+    "name": "Your name",
+    "email": "Your email",
+    "phone": "Your phone",
+    "message": "Your message",
+    "defaultMessage": "I am interested in the property: {{title}}",
+    "messagePlaceholder": "I am interested in this property...",
+    "send": "Send message",
+    "call": "Call",
+    "success": "Your message has been sent successfully",
+    "error": "Failed to send message. Please try again."
+  },
+  "agency": {
+    "title": "Listed by",
+    "viewProfile": "View agency profile",
+    "allListings": "View all listings"
+  },
+  "similar": {
+    "title": "Similar Properties",
+    "viewAll": "View all similar"
+  },
+  "proximity": {
+    "title": "Nearby",
+    "publicTransport": "Public transport",
+    "schools": "Schools",
+    "shopping": "Shopping",
+    "restaurants": "Restaurants"
+  },
+  "form": {
+    "createTitle": "Create New Property",
+    "editTitle": "Edit Property",
+    "steps": {
+      "basicInfo": "Basic Info",
+      "location": "Location",
+      "details": "Details",
+      "amenities": "Amenities",
+      "photos": "Photos",
+      "review": "Review"
+    },
+    "basicInfo": {
+      "title": "Basic Information",
+      "description": "Start by entering the essential details of your property",
+      "transactionType": "Transaction Type",
+      "transactionTypeHint": "Are you selling or renting?",
+      "rent": "For Rent",
+      "buy": "For Sale",
+      "category": "Property Type",
+      "categoryPlaceholder": "Select a property type",
+      "propertyTitle": "Property Title",
+      "propertyTitlePlaceholder": "e.g., Beautiful 3-room apartment in Zurich",
+      "propertyTitleHint": "Create an attractive title for your listing",
+      "propertyDescription": "Description",
+      "propertyDescriptionPlaceholder": "Describe your property in detail...",
+      "propertyDescriptionHint": "Include key features, condition, and what makes it special",
+      "sourceLanguage": "Listing Language",
+      "sourceLanguageHint": "We'll auto-translate to other languages"
+    },
+    "location": {
+      "title": "Location Details",
+      "description": "Help buyers or renters find your property",
+      "canton": "Canton",
+      "cantonPlaceholder": "Select a canton",
+      "city": "City",
+      "cityPlaceholder": "Select a city",
+      "selectCantonFirst": "Please select a canton first",
+      "address": "Street Address",
+      "addressPlaceholder": "e.g., Bahnhofstrasse 10",
+      "postalCode": "Postal Code",
+      "postalCodePlaceholder": "e.g., 8001"
+    },
+    "details": {
+      "title": "Property Details",
+      "description": "Provide specifications and pricing information",
+      "price": "Price",
+      "pricePlaceholder": "e.g., 2500",
+      "priceHintRent": "Monthly rent in CHF",
+      "priceHintBuy": "Sale price in CHF",
+      "additionalCosts": "Additional Costs",
+      "additionalCostsPlaceholder": "e.g., 200",
+      "additionalCostsHint": "Monthly charges (utilities, maintenance, etc.)",
+      "rooms": "Number of Rooms",
+      "roomsPlaceholder": "e.g., 3.5",
+      "roomsHint": "Include half-rooms (e.g., 3.5 for 3 rooms + 1 small room)",
+      "surface": "Living Area",
+      "surfacePlaceholder": "e.g., 85",
+      "surfaceHint": "Total living space in square meters",
+      "floor": "Floor",
+      "floorPlaceholder": "e.g., 2",
+      "floorHint": "Ground floor = 0",
+      "yearBuilt": "Year Built",
+      "yearBuiltPlaceholder": "e.g., 1990",
+      "availableFrom": "Available From",
+      "availableFromHint": "When can the new owner/tenant move in?",
+      "immediatelyAvailable": "Immediately available"
+    },
+    "amenities": {
+      "title": "Amenities & Features",
+      "description": "Select all amenities and features your property offers",
+      "noAmenities": "No amenities available",
+      "selectedCount": "{{count}} amenities selected",
+      "selectAll": "Select All",
+      "deselectAll": "Deselect All"
+    },
+    "photos": {
+      "title": "Property Photos",
+      "description": "Upload high-quality photos to attract more interest",
+      "dropzone": "Drag and drop photos here, or click to select",
+      "dropzoneHint": "JPEG, PNG, or WebP • Max 5MB per image • Up to 20 images",
+      "uploading": "Uploading...",
+      "uploadError": "Failed to upload image",
+      "removeImage": "Remove image",
+      "setPrimary": "Set as primary",
+      "primaryImage": "Primary image",
+      "noPhotos": "No photos added yet",
+      "addPhotos": "Add your first photo",
+      "imageCount": "{{count}} of {{max}} photos",
+      "tooLarge": "File is too large (max 5MB)",
+      "invalidType": "Invalid file type. Use JPEG, PNG, or WebP",
+      "maxReached": "Maximum number of images reached"
+    },
+    "review": {
+      "title": "Review Your Listing",
+      "description": "Please review all details before submitting",
+      "basicInfo": "Basic Information",
+      "location": "Location",
+      "details": "Property Details",
+      "amenities": "Amenities",
+      "photos": "Photos",
+      "edit": "Edit",
+      "noAmenities": "No amenities selected",
+      "noPhotos": "No photos uploaded",
+      "transactionType": "Transaction",
+      "category": "Type",
+      "language": "Language",
+      "price": "Price",
+      "additionalCosts": "Additional Costs",
+      "rooms": "Rooms",
+      "surface": "Surface",
+      "floor": "Floor",
+      "yearBuilt": "Year Built",
+      "availableFrom": "Available From",
+      "notSpecified": "Not specified",
+      "immediately": "Immediately",
+      "submitInfo": "Your listing will be submitted for review. Once approved, it will be published and visible to all users.",
+      "draftInfo": "Save as draft to continue editing later. Your progress will be saved."
+    },
+    "actions": {
+      "next": "Next",
+      "previous": "Previous",
+      "saveDraft": "Save as Draft",
+      "submit": "Submit for Review",
+      "submitting": "Submitting...",
+      "cancel": "Cancel",
+      "preview": "Preview"
+    },
+    "validation": {
+      "required": "This field is required",
+      "selectCategory": "Please select a property type",
+      "selectCanton": "Please select a canton",
+      "selectCity": "Please select a city",
+      "enterTitle": "Please enter a title",
+      "enterDescription": "Please enter a description",
+      "titleMinLength": "Title must be at least 10 characters",
+      "descriptionMinLength": "Description must be at least 50 characters",
+      "enterAddress": "Please enter the street address",
+      "enterPrice": "Please enter a price",
+      "invalidPrice": "Please enter a valid price",
+      "minOnePhoto": "Please upload at least one photo"
+    },
+    "success": {
+      "created": "Property created successfully!",
+      "createdDescription": "Your property has been submitted for review.",
+      "updated": "Property updated successfully!",
+      "draftSaved": "Draft saved successfully!"
+    },
+    "error": {
+      "createFailed": "Failed to create property",
+      "updateFailed": "Failed to update property",
+      "uploadFailed": "Failed to upload images",
+      "tryAgain": "Please try again later"
+    }
+  }
+}

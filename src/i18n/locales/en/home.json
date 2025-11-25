@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Find your dream property in Switzerland",
+    "subtitle": "Search thousands of properties for rent or sale across Switzerland"
+  },
+  "quickSearch": {
+    "title": "What are you looking for?",
+    "rentTab": "Rent",
+    "buyTab": "Buy",
+    "locationPlaceholder": "Location (city, canton)",
+    "categoryPlaceholder": "Property type",
+    "searchButton": "Search"
+  },
+  "featured": {
+    "title": "Featured Properties",
+    "subtitle": "Discover our selection of exceptional properties",
+    "viewAll": "View all properties"
+  },
+  "categories": {
+    "title": "Browse by Category",
+    "subtitle": "Find the perfect property type for your needs"
+  },
+  "locations": {
+    "title": "Popular Locations",
+    "subtitle": "Explore properties in Switzerland's most sought-after areas"
+  },
+  "cityListings": {
+    "title": "Discover properties by city",
+    "subtitle": "Browse real estate in Switzerland's most popular cities",
+    "toRent": "to rent",
+    "toBuy": "to buy",
+    "seeMore": "See other cities"
+  },
+  "stats": {
+    "properties": "Properties",
+    "cities": "Cities",
+    "agencies": "Agencies",
+    "happyClients": "Happy Clients"
+  },
+  "cta": {
+    "title": "Ready to find your next home?",
+    "subtitle": "Start your search today and discover amazing properties",
+    "button": "Start searching"
+  },
+  "whyUs": {
+    "title": "Why choose Immobilier.ch?",
+    "reason1Title": "Wide Selection",
+    "reason1Desc": "Thousands of properties from trusted agencies",
+    "reason2Title": "Easy Search",
+    "reason2Desc": "Advanced filters to find exactly what you need",
+    "reason3Title": "Local Expertise",
+    "reason3Desc": "In-depth knowledge of the Swiss real estate market"
+  }
+}

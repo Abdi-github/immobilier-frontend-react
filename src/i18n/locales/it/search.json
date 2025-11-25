@@ -1,0 +1,74 @@
+{
+  "title": "Cerca proprietà",
+  "filters": {
+    "title": "Filtri",
+    "category": "Tipo di immobile",
+    "allCategories": "Tutti i tipi",
+    "location": "Località",
+    "canton": "Cantone",
+    "allCantons": "Tutti i cantoni",
+    "city": "Città",
+    "allCities": "Tutte le città",
+    "price": "Prezzo",
+    "priceMin": "Prezzo min",
+    "priceMax": "Prezzo max",
+    "rooms": "Locali",
+    "roomsMin": "Min locali",
+    "roomsMax": "Max locali",
+    "surface": "Superficie",
+    "surfaceMin": "Min superficie",
+    "surfaceMax": "Max superficie",
+    "amenities": "Servizi",
+    "moreFilters": "Altri filtri",
+    "lessFilters": "Meno filtri",
+    "activeFilters": "Filtri attivi: {{count}}",
+    "clearAll": "Cancella tutto"
+  },
+  "sort": {
+    "label": "Ordina per",
+    "newest": "Più recenti",
+    "oldest": "Meno recenti",
+    "priceAsc": "Prezzo crescente",
+    "priceDesc": "Prezzo decrescente",
+    "roomsAsc": "Locali crescente",
+    "roomsDesc": "Locali decrescente"
+  },
+  "view": {
+    "grid": "Vista griglia",
+    "list": "Vista elenco",
+    "map": "Vista mappa"
+  },
+  "priceRanges": {
+    "rent": {
+      "any": "Qualsiasi prezzo",
+      "under1000": "Sotto CHF 1'000",
+      "1000to2000": "CHF 1'000 - 2'000",
+      "2000to3000": "CHF 2'000 - 3'000",
+      "3000to5000": "CHF 3'000 - 5'000",
+      "over5000": "Oltre CHF 5'000"
+    },
+    "buy": {
+      "any": "Qualsiasi prezzo",
+      "under500k": "Sotto CHF 500'000",
+      "500kto1m": "CHF 500'000 - 1M",
+      "1mto2m": "CHF 1M - 2M",
+      "2mto5m": "CHF 2M - 5M",
+      "over5m": "Oltre CHF 5M"
+    }
+  },
+  "roomOptions": {
+    "any": "Qualsiasi",
+    "1": "1+",
+    "2": "2+",
+    "3": "3+",
+    "4": "4+",
+    "5": "5+"
+  },
+  "results": {
+    "found": "{{count}} proprietà trovata",
+    "found_plural": "{{count}} proprietà trovate",
+    "showing": "Visualizzazione {{from}} - {{to}} di {{total}}",
+    "empty": "Nessuna proprietà corrisponde ai tuoi criteri",
+    "emptyHint": "Prova a modificare i filtri o ad ampliare l'area di ricerca"
+  }
+}

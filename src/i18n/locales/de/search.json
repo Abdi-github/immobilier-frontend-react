@@ -1,0 +1,74 @@
+{
+  "title": "Immobilien suchen",
+  "filters": {
+    "title": "Filter",
+    "category": "Immobilientyp",
+    "allCategories": "Alle Typen",
+    "location": "Standort",
+    "canton": "Kanton",
+    "allCantons": "Alle Kantone",
+    "city": "Stadt",
+    "allCities": "Alle Städte",
+    "price": "Preis",
+    "priceMin": "Mindestpreis",
+    "priceMax": "Höchstpreis",
+    "rooms": "Zimmer",
+    "roomsMin": "Min. Zimmer",
+    "roomsMax": "Max. Zimmer",
+    "surface": "Fläche",
+    "surfaceMin": "Min. Fläche",
+    "surfaceMax": "Max. Fläche",
+    "amenities": "Ausstattung",
+    "moreFilters": "Mehr Filter",
+    "lessFilters": "Weniger Filter",
+    "activeFilters": "Aktive Filter: {{count}}",
+    "clearAll": "Alle löschen"
+  },
+  "sort": {
+    "label": "Sortieren nach",
+    "newest": "Neueste zuerst",
+    "oldest": "Älteste zuerst",
+    "priceAsc": "Preis aufsteigend",
+    "priceDesc": "Preis absteigend",
+    "roomsAsc": "Zimmer aufsteigend",
+    "roomsDesc": "Zimmer absteigend"
+  },
+  "view": {
+    "grid": "Rasteransicht",
+    "list": "Listenansicht",
+    "map": "Kartenansicht"
+  },
+  "priceRanges": {
+    "rent": {
+      "any": "Beliebiger Preis",
+      "under1000": "Unter CHF 1'000",
+      "1000to2000": "CHF 1'000 - 2'000",
+      "2000to3000": "CHF 2'000 - 3'000",
+      "3000to5000": "CHF 3'000 - 5'000",
+      "over5000": "Über CHF 5'000"
+    },
+    "buy": {
+      "any": "Beliebiger Preis",
+      "under500k": "Unter CHF 500'000",
+      "500kto1m": "CHF 500'000 - 1M",
+      "1mto2m": "CHF 1M - 2M",
+      "2mto5m": "CHF 2M - 5M",
+      "over5m": "Über CHF 5M"
+    }
+  },
+  "roomOptions": {
+    "any": "Beliebig",
+    "1": "1+",
+    "2": "2+",
+    "3": "3+",
+    "4": "4+",
+    "5": "5+"
+  },
+  "results": {
+    "found": "{{count}} Immobilie gefunden",
+    "found_plural": "{{count}} Immobilien gefunden",
+    "showing": "Anzeige von {{from}} - {{to}} von {{total}}",
+    "empty": "Keine Immobilien entsprechen Ihren Kriterien",
+    "emptyHint": "Versuchen Sie, Ihre Filter anzupassen oder Ihren Suchbereich zu erweitern"
+  }
+}

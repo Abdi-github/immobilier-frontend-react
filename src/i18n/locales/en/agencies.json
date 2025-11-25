@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Find the agency that suits you best"
+  },
+  "search": {
+    "locationPlaceholder": "Where? (city, canton)",
+    "agencyNamePlaceholder": "Agency name",
+    "hint": "Search by city, ZIP or canton to display the corresponding agencies.",
+    "allLocations": "All locations"
+  },
+  "results": {
+    "title": "immobilier.ch agencies in {{canton}} canton",
+    "showing": "Showing {{from}}-{{to}} of {{total}} agencies",
+    "noResults": "No agencies found",
+    "noResultsHint": "Try adjusting your search criteria"
+  },
+  "card": {
+    "verified": "Verified",
+    "propertiesCount": "{{count}} residential objects",
+    "toBuy": "To buy",
+    "toRent": "To rent",
+    "details": "Details",
+    "map": "Map",
+    "contact": "Contact"
+  }
+}

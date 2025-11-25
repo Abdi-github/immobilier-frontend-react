@@ -1,0 +1,74 @@
+{
+  "title": "Rechercher des propriétés",
+  "filters": {
+    "title": "Filtres",
+    "category": "Type de bien",
+    "allCategories": "Tous types",
+    "location": "Lieu",
+    "canton": "Canton",
+    "allCantons": "Tous les cantons",
+    "city": "Ville",
+    "allCities": "Toutes les villes",
+    "price": "Prix",
+    "priceMin": "Prix min",
+    "priceMax": "Prix max",
+    "rooms": "Pièces",
+    "roomsMin": "Pièces min",
+    "roomsMax": "Pièces max",
+    "surface": "Surface",
+    "surfaceMin": "Surface min",
+    "surfaceMax": "Surface max",
+    "amenities": "Équipements",
+    "moreFilters": "Plus de filtres",
+    "lessFilters": "Moins de filtres",
+    "activeFilters": "Filtres actifs : {{count}}",
+    "clearAll": "Tout effacer"
+  },
+  "sort": {
+    "label": "Trier par",
+    "newest": "Plus récent",
+    "oldest": "Plus ancien",
+    "priceAsc": "Prix croissant",
+    "priceDesc": "Prix décroissant",
+    "roomsAsc": "Pièces croissant",
+    "roomsDesc": "Pièces décroissant"
+  },
+  "view": {
+    "grid": "Vue grille",
+    "list": "Vue liste",
+    "map": "Vue carte"
+  },
+  "priceRanges": {
+    "rent": {
+      "any": "Tout prix",
+      "under1000": "Moins de CHF 1'000",
+      "1000to2000": "CHF 1'000 - 2'000",
+      "2000to3000": "CHF 2'000 - 3'000",
+      "3000to5000": "CHF 3'000 - 5'000",
+      "over5000": "Plus de CHF 5'000"
+    },
+    "buy": {
+      "any": "Tout prix",
+      "under500k": "Moins de CHF 500'000",
+      "500kto1m": "CHF 500'000 - 1M",
+      "1mto2m": "CHF 1M - 2M",
+      "2mto5m": "CHF 2M - 5M",
+      "over5m": "Plus de CHF 5M"
+    }
+  },
+  "roomOptions": {
+    "any": "Toutes",
+    "1": "1+",
+    "2": "2+",
+    "3": "3+",
+    "4": "4+",
+    "5": "5+"
+  },
+  "results": {
+    "found": "{{count}} propriété trouvée",
+    "found_plural": "{{count}} propriétés trouvées",
+    "showing": "Affichage de {{from}} - {{to}} sur {{total}}",
+    "empty": "Aucune propriété ne correspond à vos critères",
+    "emptyHint": "Essayez d'ajuster vos filtres ou d'élargir votre zone de recherche"
+  }
+}

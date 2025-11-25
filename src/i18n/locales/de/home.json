@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Finden Sie Ihre Traumimmobilie in der Schweiz",
+    "subtitle": "Durchsuchen Sie Tausende von Immobilien zur Miete oder zum Kauf in der ganzen Schweiz"
+  },
+  "quickSearch": {
+    "title": "Was suchen Sie?",
+    "rentTab": "Mieten",
+    "buyTab": "Kaufen",
+    "locationPlaceholder": "Ort (Stadt, Kanton)",
+    "categoryPlaceholder": "Immobilientyp",
+    "searchButton": "Suchen"
+  },
+  "featured": {
+    "title": "Ausgewählte Immobilien",
+    "subtitle": "Entdecken Sie unsere Auswahl an aussergewöhnlichen Immobilien",
+    "viewAll": "Alle Immobilien ansehen"
+  },
+  "categories": {
+    "title": "Nach Kategorie durchsuchen",
+    "subtitle": "Finden Sie den perfekten Immobilientyp für Ihre Bedürfnisse"
+  },
+  "locations": {
+    "title": "Beliebte Standorte",
+    "subtitle": "Erkunden Sie Immobilien in den begehrtesten Regionen der Schweiz"
+  },
+  "cityListings": {
+    "title": "Entdecken Sie Immobilien nach Stadt",
+    "subtitle": "Durchsuchen Sie Immobilien in den beliebtesten Städten der Schweiz",
+    "toRent": "zu vermieten",
+    "toBuy": "zu kaufen",
+    "seeMore": "Weitere Städte anzeigen"
+  },
+  "stats": {
+    "properties": "Immobilien",
+    "cities": "Städte",
+    "agencies": "Agenturen",
+    "happyClients": "Zufriedene Kunden"
+  },
+  "cta": {
+    "title": "Bereit, Ihr nächstes Zuhause zu finden?",
+    "subtitle": "Starten Sie noch heute Ihre Suche und entdecken Sie erstaunliche Immobilien",
+    "button": "Suche starten"
+  },
+  "whyUs": {
+    "title": "Warum Immobilier.ch wählen?",
+    "reason1Title": "Grosse Auswahl",
+    "reason1Desc": "Tausende von Immobilien von vertrauenswürdigen Agenturen",
+    "reason2Title": "Einfache Suche",
+    "reason2Desc": "Erweiterte Filter, um genau das zu finden, was Sie brauchen",
+    "reason3Title": "Lokale Expertise",
+    "reason3Desc": "Tiefgreifende Kenntnisse des Schweizer Immobilienmarktes"
+  }
+}

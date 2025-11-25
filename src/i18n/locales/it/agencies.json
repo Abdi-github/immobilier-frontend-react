@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Trova l'agenzia più adatta a te"
+  },
+  "search": {
+    "locationPlaceholder": "Dove? (città, cantone)",
+    "agencyNamePlaceholder": "Nome dell'agenzia",
+    "hint": "Cerca per città, CAP o cantone per visualizzare le agenzie corrispondenti.",
+    "allLocations": "Tutte le posizioni"
+  },
+  "results": {
+    "title": "Agenzie immobilier.ch nel cantone di {{canton}}",
+    "showing": "Mostrando {{from}}-{{to}} di {{total}} agenzie",
+    "noResults": "Nessuna agenzia trovata",
+    "noResultsHint": "Prova a modificare i criteri di ricerca"
+  },
+  "card": {
+    "verified": "Verificata",
+    "propertiesCount": "{{count}} oggetti residenziali",
+    "toBuy": "Da comprare",
+    "toRent": "Da affittare",
+    "details": "Dettagli",
+    "map": "Mappa",
+    "contact": "Contatto"
+  }
+}

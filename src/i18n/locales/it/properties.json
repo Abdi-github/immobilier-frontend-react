@@ -1,0 +1,216 @@
+{
+  "listing": {
+    "title": "Proprietà",
+    "results": "{{count}} proprietà trovate",
+    "noResults": "Nessuna proprietà trovata",
+    "noResultsMessage": "Prova a modificare i filtri di ricerca"
+  },
+  "detail": {
+    "description": "Descrizione",
+    "features": "Caratteristiche",
+    "amenities": "Servizi",
+    "location": "Posizione",
+    "gallery": "Galleria",
+    "contact": "Contatto",
+    "share": "Condividi",
+    "print": "Stampa",
+    "report": "Segnala annuncio"
+  },
+  "features": {
+    "rooms": "Locali",
+    "bedrooms": "Camere da letto",
+    "bathrooms": "Bagni",
+    "surface": "Superficie abitabile",
+    "floor": "Piano",
+    "yearBuilt": "Anno di costruzione",
+    "availableFrom": "Disponibile dal",
+    "parking": "Parcheggio"
+  },
+  "card": {
+    "new": "Nuovo",
+    "featured": "In evidenza",
+    "reduced": "Prezzo ridotto",
+    "viewDetails": "Vedi dettagli"
+  },
+  "contact": {
+    "title": "Contatta l'agenzia",
+    "name": "Il tuo nome",
+    "email": "La tua email",
+    "phone": "Il tuo telefono",
+    "message": "Il tuo messaggio",
+    "messagePlaceholder": "Sono interessato a questa proprietà...",
+    "send": "Invia messaggio",
+    "success": "Messaggio inviato con successo",
+    "error": "Invio del messaggio non riuscito"
+  },
+  "agency": {
+    "title": "Proposto da",
+    "viewProfile": "Vedi profilo agenzia",
+    "allListings": "Vedi tutti gli annunci"
+  },
+  "similar": {
+    "title": "Proprietà simili",
+    "viewAll": "Vedi tutti i simili"
+  },
+  "proximity": {
+    "title": "Nelle vicinanze",
+    "publicTransport": "Trasporti pubblici",
+    "schools": "Scuole",
+    "shopping": "Negozi",
+    "restaurants": "Ristoranti"
+  },
+  "form": {
+    "createTitle": "Crea nuovo annuncio",
+    "editTitle": "Modifica annuncio",
+    "steps": {
+      "basicInfo": "Info base",
+      "location": "Posizione",
+      "details": "Dettagli",
+      "amenities": "Servizi",
+      "photos": "Foto",
+      "review": "Verifica"
+    },
+    "basicInfo": {
+      "title": "Informazioni di base",
+      "description": "Inizia inserendo i dettagli essenziali della tua proprietà",
+      "transactionType": "Tipo di transazione",
+      "transactionTypeHint": "Stai vendendo o affittando?",
+      "rent": "In affitto",
+      "buy": "In vendita",
+      "category": "Tipo di proprietà",
+      "categoryPlaceholder": "Seleziona un tipo di proprietà",
+      "propertyTitle": "Titolo dell'annuncio",
+      "propertyTitlePlaceholder": "es. Bellissimo appartamento 3 locali a Zurigo",
+      "propertyTitleHint": "Crea un titolo attraente per il tuo annuncio",
+      "propertyDescription": "Descrizione",
+      "propertyDescriptionPlaceholder": "Descrivi la tua proprietà in dettaglio...",
+      "propertyDescriptionHint": "Includi caratteristiche principali, condizioni e cosa la rende speciale",
+      "sourceLanguage": "Lingua dell'annuncio",
+      "sourceLanguageHint": "Tradurremo automaticamente nelle altre lingue"
+    },
+    "location": {
+      "title": "Dettagli posizione",
+      "description": "Aiuta acquirenti o affittuari a trovare la tua proprietà",
+      "canton": "Cantone",
+      "cantonPlaceholder": "Seleziona un cantone",
+      "city": "Città",
+      "cityPlaceholder": "Seleziona una città",
+      "selectCantonFirst": "Seleziona prima un cantone",
+      "address": "Indirizzo",
+      "addressPlaceholder": "es. Bahnhofstrasse 10",
+      "postalCode": "Codice postale",
+      "postalCodePlaceholder": "es. 8001"
+    },
+    "details": {
+      "title": "Dettagli proprietà",
+      "description": "Fornisci specifiche e informazioni sui prezzi",
+      "price": "Prezzo",
+      "pricePlaceholder": "es. 2500",
+      "priceHintRent": "Affitto mensile in CHF",
+      "priceHintBuy": "Prezzo di vendita in CHF",
+      "additionalCosts": "Spese accessorie",
+      "additionalCostsPlaceholder": "es. 200",
+      "additionalCostsHint": "Spese mensili (utenze, manutenzione, ecc.)",
+      "rooms": "Numero di locali",
+      "roomsPlaceholder": "es. 3.5",
+      "roomsHint": "Includi i mezzi locali (es. 3.5 per 3 locali + 1 piccolo locale)",
+      "surface": "Superficie abitabile",
+      "surfacePlaceholder": "es. 85",
+      "surfaceHint": "Superficie abitabile totale in metri quadrati",
+      "floor": "Piano",
+      "floorPlaceholder": "es. 2",
+      "floorHint": "Piano terra = 0",
+      "yearBuilt": "Anno di costruzione",
+      "yearBuiltPlaceholder": "es. 1990",
+      "availableFrom": "Disponibile dal",
+      "availableFromHint": "Quando può trasferirsi il nuovo proprietario/affittuario?",
+      "immediatelyAvailable": "Disponibile immediatamente"
+    },
+    "amenities": {
+      "title": "Servizi e caratteristiche",
+      "description": "Seleziona tutti i servizi e le caratteristiche della tua proprietà",
+      "noAmenities": "Nessun servizio disponibile",
+      "selectedCount": "{{count}} servizi selezionati",
+      "selectAll": "Seleziona tutto",
+      "deselectAll": "Deseleziona tutto"
+    },
+    "photos": {
+      "title": "Foto della proprietà",
+      "description": "Carica foto di alta qualità per attirare più interesse",
+      "dropzone": "Trascina e rilascia le foto qui, o clicca per selezionare",
+      "dropzoneHint": "JPEG, PNG o WebP • Max 5 MB per immagine • Fino a 20 immagini",
+      "uploading": "Caricamento...",
+      "uploadError": "Caricamento immagine fallito",
+      "removeImage": "Rimuovi immagine",
+      "setPrimary": "Imposta come principale",
+      "primaryImage": "Immagine principale",
+      "noPhotos": "Nessuna foto aggiunta",
+      "addPhotos": "Aggiungi la tua prima foto",
+      "imageCount": "{{count}} di {{max}} foto",
+      "tooLarge": "File troppo grande (max 5 MB)",
+      "invalidType": "Tipo di file non valido. Usa JPEG, PNG o WebP",
+      "maxReached": "Numero massimo di immagini raggiunto"
+    },
+    "review": {
+      "title": "Verifica il tuo annuncio",
+      "description": "Verifica tutti i dettagli prima di inviare",
+      "basicInfo": "Informazioni di base",
+      "location": "Posizione",
+      "details": "Dettagli proprietà",
+      "amenities": "Servizi",
+      "photos": "Foto",
+      "edit": "Modifica",
+      "noAmenities": "Nessun servizio selezionato",
+      "noPhotos": "Nessuna foto caricata",
+      "transactionType": "Transazione",
+      "category": "Tipo",
+      "language": "Lingua",
+      "price": "Prezzo",
+      "additionalCosts": "Spese accessorie",
+      "rooms": "Locali",
+      "surface": "Superficie",
+      "floor": "Piano",
+      "yearBuilt": "Anno di costruzione",
+      "availableFrom": "Disponibile dal",
+      "notSpecified": "Non specificato",
+      "immediately": "Immediatamente",
+      "submitInfo": "Il tuo annuncio verrà inviato per la verifica. Una volta approvato, sarà pubblicato e visibile a tutti gli utenti.",
+      "draftInfo": "Salva come bozza per continuare più tardi. I tuoi progressi saranno salvati."
+    },
+    "actions": {
+      "next": "Avanti",
+      "previous": "Indietro",
+      "saveDraft": "Salva come bozza",
+      "submit": "Invia per verifica",
+      "submitting": "Invio in corso...",
+      "cancel": "Annulla",
+      "preview": "Anteprima"
+    },
+    "validation": {
+      "required": "Questo campo è obbligatorio",
+      "selectCategory": "Seleziona un tipo di proprietà",
+      "selectCanton": "Seleziona un cantone",
+      "selectCity": "Seleziona una città",
+      "enterTitle": "Inserisci un titolo",
+      "enterDescription": "Inserisci una descrizione",
+      "titleMinLength": "Il titolo deve contenere almeno 10 caratteri",
+      "descriptionMinLength": "La descrizione deve contenere almeno 50 caratteri",
+      "enterAddress": "Inserisci l'indirizzo",
+      "enterPrice": "Inserisci un prezzo",
+      "invalidPrice": "Inserisci un prezzo valido",
+      "minOnePhoto": "Carica almeno una foto"
+    },
+    "success": {
+      "created": "Annuncio creato con successo!",
+      "createdDescription": "Il tuo annuncio è stato inviato per la verifica.",
+      "updated": "Annuncio aggiornato con successo!",
+      "draftSaved": "Bozza salvata con successo!"
+    },
+    "error": {
+      "createFailed": "Creazione annuncio fallita",
+      "updateFailed": "Aggiornamento annuncio fallito",
+      "uploadFailed": "Caricamento immagini fallito",
+      "tryAgain": "Riprova più tardi"
+    }
+  }
+}

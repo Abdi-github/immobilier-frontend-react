@@ -1,0 +1,266 @@
+{
+  "dashboard": {
+    "nav": {
+      "profile": "Profilo",
+      "favorites": "Preferiti",
+      "alerts": "Notifiche",
+      "inquiries": "Le mie Richieste",
+      "settings": "Impostazioni",
+      "myProperties": "Le mie proprietà",
+      "createProperty": "Pubblica annuncio",
+      "backToSite": "Torna al sito",
+      "logout": "Esci"
+    }
+  },
+  "profile": {
+    "title": "Il mio profilo",
+    "description": "Gestisci le tue informazioni personali e le impostazioni del tuo account",
+    "personalInfo": "Informazioni personali",
+    "personalInfoDescription": "Aggiorna i tuoi dati personali e la foto del profilo",
+    "accountInfo": "Informazioni account",
+    "accountInfoDescription": "Visualizza i dettagli del tuo account e lo stato",
+    "editProfile": "Modifica profilo",
+    "updateSuccess": "Profilo aggiornato con successo",
+    "updateError": "Impossibile aggiornare il profilo",
+    "emailVerified": "Verificata",
+    "emailReadOnly": "L'email non può essere modificata",
+    "notProvided": "Non fornito",
+    "avatar": {
+      "invalidType": "Carica un file immagine",
+      "tooLarge": "L'immagine deve essere inferiore a 5 MB",
+      "uploadSuccess": "Foto del profilo aggiornata",
+      "uploadError": "Impossibile caricare l'immagine"
+    },
+    "fields": {
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Email",
+      "phone": "Telefono",
+      "memberSince": "Membro dal",
+      "accountStatus": "Stato account",
+      "preferredLanguage": "Lingua preferita",
+      "agency": "Agenzia"
+    },
+    "userType": {
+      "endUser": "Privato",
+      "owner": "Proprietario immobiliare",
+      "agent": "Agente",
+      "agencyAdmin": "Amministratore agenzia",
+      "platformAdmin": "Amministratore piattaforma",
+      "superAdmin": "Super amministratore"
+    },
+    "status": {
+      "active": "Attivo",
+      "inactive": "Inattivo"
+    }
+  },
+  "settings": {
+    "title": "Impostazioni account",
+    "description": "Gestisci la tua password, le preferenze linguistiche e le notifiche",
+    "language": {
+      "title": "Preferenze lingua",
+      "description": "Scegli la lingua preferita per l'interfaccia e le comunicazioni",
+      "select": "Lingua interfaccia",
+      "updateSuccess": "Preferenza lingua aggiornata",
+      "updateError": "Impossibile aggiornare la lingua"
+    },
+    "password": {
+      "title": "Cambia password",
+      "description": "Aggiorna la tua password per mantenere sicuro il tuo account",
+      "current": "Password attuale",
+      "new": "Nuova password",
+      "confirm": "Conferma nuova password",
+      "change": "Cambia password",
+      "requirements": "Almeno 8 caratteri con maiuscole, minuscole e numeri",
+      "changeSuccess": "Password cambiata con successo",
+      "changeError": "Impossibile cambiare la password"
+    },
+    "notifications": {
+      "title": "Notifiche email",
+      "description": "Scegli quali email desideri ricevere",
+      "newProperties": "Nuove proprietà corrispondenti",
+      "newPropertiesDesc": "Ricevi notifiche quando nuove proprietà corrispondono ai tuoi criteri",
+      "priceChanges": "Variazioni di prezzo",
+      "priceChangesDesc": "Ricevi notifiche sulle variazioni di prezzo dei tuoi preferiti",
+      "favoritesUpdates": "Aggiornamenti preferiti",
+      "favoritesUpdatesDesc": "Ricevi notifiche sugli aggiornamenti delle proprietà salvate",
+      "newsletter": "Newsletter",
+      "newsletterDesc": "Ricevi la nostra newsletter settimanale con approfondimenti sul mercato",
+      "updateSuccess": "Preferenze di notifica aggiornate",
+      "updateError": "Impossibile aggiornare le preferenze"
+    },
+    "danger": {
+      "title": "Zona di pericolo",
+      "description": "Azioni irreversibili per il tuo account",
+      "deleteAccount": "Elimina account",
+      "deleteConfirmTitle": "Sei assolutamente sicuro?",
+      "deleteConfirmDescription": "Questa azione non può essere annullata. Il tuo account sarà eliminato definitivamente e tutti i tuoi dati saranno rimossi dai nostri server.",
+      "deleteConfirm": "Sì, elimina il mio account"
+    }
+  },
+  "favorites": {
+    "title": "I miei preferiti",
+    "description": "Proprietà che hai salvato per dopo",
+    "count": "{{count}} proprietà salvate",
+    "count_one": "{{count}} proprietà salvata",
+    "count_other": "{{count}} proprietà salvate",
+    "browseMore": "Sfoglia proprietà",
+    "viewProperty": "Visualizza proprietà",
+    "savedOn": "Salvato il {{date}}",
+    "propertyUnavailable": "Non più disponibile",
+    "removeSuccess": "Proprietà rimossa dai preferiti",
+    "removeError": "Impossibile rimuovere dai preferiti",
+    "removeConfirmTitle": "Rimuovere dai preferiti?",
+    "removeConfirmDescription": "Questa proprietà sarà rimossa dalla tua lista salvata.",
+    "removeConfirm": "Rimuovi",
+    "empty": {
+      "title": "Nessun preferito",
+      "description": "Inizia a salvare le proprietà che ti piacciono per trovarle facilmente in seguito",
+      "browseProperties": "Sfoglia proprietà"
+    }
+  },
+  "alerts": {
+    "title": "Le mie notifiche",
+    "description": "Ricevi notifiche quando nuove proprietà corrispondono ai tuoi criteri",
+    "createNew": "Crea notifica",
+    "createTitle": "Crea nuova notifica",
+    "createDescription": "Imposta una notifica per essere avvisato quando nuove proprietà corrispondono ai tuoi criteri",
+    "editTitle": "Modifica notifica",
+    "editDescription": "Aggiorna le impostazioni della notifica",
+    "createSuccess": "Notifica creata con successo",
+    "updateSuccess": "Notifica aggiornata con successo",
+    "deleteSuccess": "Notifica eliminata",
+    "activateSuccess": "Notifica attivata",
+    "pauseSuccess": "Notifica in pausa",
+    "deleteError": "Impossibile eliminare la notifica",
+    "toggleError": "Impossibile aggiornare la notifica",
+    "active": "Attiva",
+    "paused": "In pausa",
+    "status": {
+      "paused": "In pausa"
+    },
+    "matchCount": "{{count}} corrispondenze",
+    "matchCount_one": "{{count}} corrispondenza",
+    "matchCount_other": "{{count}} corrispondenze",
+    "createdAt": "Creata {{date}}",
+    "lastSent": "Ultimo invio {{date}}",
+    "deleteConfirmTitle": "Eliminare questa notifica?",
+    "deleteConfirmDescription": "Questa notifica sarà eliminata definitivamente e non riceverai più notifiche per essa.",
+    "frequency": {
+      "instant": "Notifiche istantanee",
+      "daily": "Riepilogo giornaliero",
+      "weekly": "Riepilogo settimanale"
+    },
+    "filters": {
+      "citySet": "Città selezionata",
+      "cantonSet": "Cantone selezionato",
+      "from": "Da",
+      "to": "Fino a",
+      "rooms": "locali"
+    },
+    "form": {
+      "name": "Nome notifica",
+      "namePlaceholder": "es. Appartamenti a Zurigo",
+      "frequency": "Frequenza notifiche",
+      "selectFrequency": "Seleziona frequenza",
+      "filters": "Filtri di ricerca",
+      "transactionType": "Tipo transazione",
+      "anyTransaction": "Qualsiasi transazione",
+      "category": "Tipo proprietà",
+      "anyCategory": "Qualsiasi tipo",
+      "location": "Posizione",
+      "anyLocation": "Ovunque in Svizzera",
+      "priceMin": "Prezzo min (CHF)",
+      "priceMax": "Prezzo max (CHF)",
+      "roomsMin": "Min. locali",
+      "roomsMax": "Max. locali",
+      "surfaceMin": "Min. superficie (m²)",
+      "surfaceMax": "Max. superficie (m²)",
+      "noLimit": "Nessun limite",
+      "create": "Crea notifica",
+      "update": "Salva modifiche"
+    },
+    "empty": {
+      "title": "Nessuna notifica",
+      "description": "Crea una notifica per essere avvisato quando nuove proprietà corrispondono ai tuoi criteri",
+      "createFirst": "Crea la prima notifica"
+    }
+  },
+  "common": {
+    "save": "Salva",
+    "cancel": "Annulla",
+    "edit": "Modifica",
+    "delete": "Elimina",
+    "previous": "Precedente",
+    "next": "Avanti",
+    "month": "mese",
+    "transaction": {
+      "rent": "In affitto",
+      "buy": "In vendita"
+    }
+  },
+  "myProperties": {
+    "title": "Le mie proprietà",
+    "subtitle": "Gestisci i tuoi annunci immobiliari",
+    "createNew": "Crea nuovo annuncio",
+    "createFirst": "Crea annuncio",
+    "untitled": "Proprietà senza titolo",
+    "noImage": "Nessuna immagine",
+    "rent": "In affitto",
+    "sale": "In vendita",
+    "page": "pagina",
+    "searchPlaceholder": "Cerca proprietà...",
+    "sortBy": "Ordina per",
+    "updating": "Aggiornamento...",
+    "showing": "Visualizzazione {{from}}-{{to}} di {{total}}",
+    "previous": "Precedente",
+    "next": "Avanti",
+    "retry": "Riprova",
+    "clearFilter": "Cancella filtro",
+    "stats": {
+      "total": "Tutti",
+      "draft": "Bozze",
+      "pending": "In attesa",
+      "approved": "Approvati",
+      "published": "Pubblicati",
+      "rejected": "Rifiutati",
+      "archived": "Archiviati"
+    },
+    "status": {
+      "draft": "Bozza",
+      "pending": "In attesa",
+      "approved": "Approvato",
+      "published": "Pubblicato",
+      "rejected": "Rifiutato",
+      "archived": "Archiviato"
+    },
+    "sort": {
+      "newest": "Più recenti",
+      "oldest": "Meno recenti",
+      "priceHigh": "Prezzo: alto a basso",
+      "priceLow": "Prezzo: basso a alto",
+      "recentlyUpdated": "Aggiornati di recente"
+    },
+    "actions": {
+      "view": "Visualizza pagina pubblica",
+      "edit": "Modifica",
+      "submit": "Invia per approvazione",
+      "archive": "Archivia",
+      "delete": "Elimina"
+    },
+    "emptyTitle": "Nessuna proprietà ancora",
+    "emptyDescription": "Inizia creando il tuo primo annuncio. Bastano pochi minuti!",
+    "noFilteredResults": "Nessuna proprietà trovata per questo filtro",
+    "tryDifferentFilter": "Prova un filtro diverso o crea un nuovo annuncio",
+    "errorTitle": "Impossibile caricare le proprietà",
+    "errorDescription": "Qualcosa è andato storto. Per favore riprova.",
+    "confirmDelete": "Sei sicuro di voler eliminare questa proprietà? Questa azione è irreversibile.",
+    "deleteSuccess": "Proprietà eliminata con successo",
+    "deleteError": "Impossibile eliminare la proprietà",
+    "submitSuccess": "Proprietà inviata per approvazione",
+    "submitError": "Impossibile inviare la proprietà per approvazione",
+    "confirmArchive": "Sei sicuro di voler archiviare questa proprietà?",
+    "archiveSuccess": "Proprietà archiviata con successo",
+    "archiveError": "Impossibile archiviare la proprietà"
+  }
+}

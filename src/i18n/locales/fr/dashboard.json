@@ -1,0 +1,266 @@
+{
+  "dashboard": {
+    "nav": {
+      "profile": "Profil",
+      "favorites": "Favoris",
+      "alerts": "Alertes",
+      "inquiries": "Mes Demandes",
+      "settings": "Paramètres",
+      "myProperties": "Mes Propriétés",
+      "createProperty": "Publier une annonce",
+      "backToSite": "Retour au site",
+      "logout": "Déconnexion"
+    }
+  },
+  "profile": {
+    "title": "Mon Profil",
+    "description": "Gérez vos informations personnelles et les paramètres de votre compte",
+    "personalInfo": "Informations Personnelles",
+    "personalInfoDescription": "Mettez à jour vos coordonnées et votre photo de profil",
+    "accountInfo": "Informations du Compte",
+    "accountInfoDescription": "Consultez les détails et le statut de votre compte",
+    "editProfile": "Modifier le Profil",
+    "updateSuccess": "Profil mis à jour avec succès",
+    "updateError": "Échec de la mise à jour du profil",
+    "emailVerified": "Vérifié",
+    "emailReadOnly": "L'email ne peut pas être modifié",
+    "notProvided": "Non renseigné",
+    "avatar": {
+      "invalidType": "Veuillez télécharger un fichier image",
+      "tooLarge": "L'image doit être inférieure à 5 Mo",
+      "uploadSuccess": "Photo de profil mise à jour",
+      "uploadError": "Échec du téléchargement de l'image"
+    },
+    "fields": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "memberSince": "Membre depuis",
+      "accountStatus": "Statut du compte",
+      "preferredLanguage": "Langue préférée",
+      "agency": "Agence"
+    },
+    "userType": {
+      "endUser": "Particulier",
+      "owner": "Propriétaire",
+      "agent": "Agent",
+      "agencyAdmin": "Admin d'agence",
+      "platformAdmin": "Admin plateforme",
+      "superAdmin": "Super Admin"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    }
+  },
+  "settings": {
+    "title": "Paramètres du Compte",
+    "description": "Gérez votre mot de passe, vos préférences linguistiques et vos notifications",
+    "language": {
+      "title": "Préférences Linguistiques",
+      "description": "Choisissez votre langue préférée pour l'interface et les communications",
+      "select": "Langue de l'interface",
+      "updateSuccess": "Préférence linguistique mise à jour",
+      "updateError": "Échec de la mise à jour de la langue"
+    },
+    "password": {
+      "title": "Changer le Mot de Passe",
+      "description": "Mettez à jour votre mot de passe pour sécuriser votre compte",
+      "current": "Mot de passe actuel",
+      "new": "Nouveau mot de passe",
+      "confirm": "Confirmer le nouveau mot de passe",
+      "change": "Changer le mot de passe",
+      "requirements": "Au moins 8 caractères avec majuscule, minuscule et chiffre",
+      "changeSuccess": "Mot de passe changé avec succès",
+      "changeError": "Échec du changement de mot de passe"
+    },
+    "notifications": {
+      "title": "Notifications par Email",
+      "description": "Choisissez les emails que vous souhaitez recevoir",
+      "newProperties": "Nouveaux Biens Correspondants",
+      "newPropertiesDesc": "Soyez notifié quand de nouveaux biens correspondent à vos alertes",
+      "priceChanges": "Changements de Prix",
+      "priceChangesDesc": "Soyez notifié des changements de prix sur vos favoris",
+      "favoritesUpdates": "Mises à jour des Favoris",
+      "favoritesUpdatesDesc": "Soyez notifié des mises à jour de vos biens sauvegardés",
+      "newsletter": "Newsletter",
+      "newsletterDesc": "Recevez notre newsletter hebdomadaire avec des analyses du marché",
+      "updateSuccess": "Préférences de notification mises à jour",
+      "updateError": "Échec de la mise à jour des préférences"
+    },
+    "danger": {
+      "title": "Zone de Danger",
+      "description": "Actions irréversibles pour votre compte",
+      "deleteAccount": "Supprimer le Compte",
+      "deleteConfirmTitle": "Êtes-vous absolument sûr ?",
+      "deleteConfirmDescription": "Cette action est irréversible. Cela supprimera définitivement votre compte et toutes vos données de nos serveurs.",
+      "deleteConfirm": "Oui, supprimer mon compte"
+    }
+  },
+  "favorites": {
+    "title": "Mes Favoris",
+    "description": "Les biens que vous avez sauvegardés",
+    "count": "{{count}} biens sauvegardés",
+    "count_one": "{{count}} bien sauvegardé",
+    "count_other": "{{count}} biens sauvegardés",
+    "browseMore": "Parcourir les Biens",
+    "viewProperty": "Voir le Bien",
+    "savedOn": "Sauvegardé le {{date}}",
+    "propertyUnavailable": "Plus disponible",
+    "removeSuccess": "Bien retiré des favoris",
+    "removeError": "Échec du retrait des favoris",
+    "removeConfirmTitle": "Retirer des favoris ?",
+    "removeConfirmDescription": "Ce bien sera retiré de votre liste de biens sauvegardés.",
+    "removeConfirm": "Retirer",
+    "empty": {
+      "title": "Aucun favori",
+      "description": "Commencez à sauvegarder les biens que vous aimez pour les retrouver facilement",
+      "browseProperties": "Parcourir les Biens"
+    }
+  },
+  "alerts": {
+    "title": "Mes Alertes",
+    "description": "Soyez notifié quand de nouveaux biens correspondent à vos critères",
+    "createNew": "Créer une Alerte",
+    "createTitle": "Créer une Nouvelle Alerte",
+    "createDescription": "Configurez une alerte pour être notifié quand de nouveaux biens correspondent à vos critères",
+    "editTitle": "Modifier l'Alerte",
+    "editDescription": "Mettez à jour les paramètres de votre alerte",
+    "createSuccess": "Alerte créée avec succès",
+    "updateSuccess": "Alerte mise à jour avec succès",
+    "deleteSuccess": "Alerte supprimée avec succès",
+    "activateSuccess": "Alerte activée",
+    "pauseSuccess": "Alerte mise en pause",
+    "deleteError": "Échec de la suppression de l'alerte",
+    "toggleError": "Échec de la mise à jour de l'alerte",
+    "active": "Active",
+    "paused": "En pause",
+    "status": {
+      "paused": "En pause"
+    },
+    "matchCount": "{{count}} correspondances",
+    "matchCount_one": "{{count}} correspondance",
+    "matchCount_other": "{{count}} correspondances",
+    "createdAt": "Créée le {{date}}",
+    "lastSent": "Dernière envoi le {{date}}",
+    "deleteConfirmTitle": "Supprimer cette alerte ?",
+    "deleteConfirmDescription": "Cette alerte sera définitivement supprimée et vous ne recevrez plus de notifications.",
+    "frequency": {
+      "instant": "Notifications instantanées",
+      "daily": "Résumé quotidien",
+      "weekly": "Résumé hebdomadaire"
+    },
+    "filters": {
+      "citySet": "Ville sélectionnée",
+      "cantonSet": "Canton sélectionné",
+      "from": "À partir de",
+      "to": "Jusqu'à",
+      "rooms": "pièces"
+    },
+    "form": {
+      "name": "Nom de l'Alerte",
+      "namePlaceholder": "ex: Appartements à Genève",
+      "frequency": "Fréquence des Notifications",
+      "selectFrequency": "Sélectionner la fréquence",
+      "filters": "Filtres de Recherche",
+      "transactionType": "Type de Transaction",
+      "anyTransaction": "Toute transaction",
+      "category": "Type de Bien",
+      "anyCategory": "Tout type",
+      "location": "Localisation",
+      "anyLocation": "Partout en Suisse",
+      "priceMin": "Prix Min (CHF)",
+      "priceMax": "Prix Max (CHF)",
+      "roomsMin": "Pièces Min",
+      "roomsMax": "Pièces Max",
+      "surfaceMin": "Surface Min (m²)",
+      "surfaceMax": "Surface Max (m²)",
+      "noLimit": "Sans limite",
+      "create": "Créer l'Alerte",
+      "update": "Enregistrer"
+    },
+    "empty": {
+      "title": "Aucune alerte",
+      "description": "Créez une alerte pour être notifié quand de nouveaux biens correspondent à vos critères",
+      "createFirst": "Créer votre première alerte"
+    }
+  },
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "month": "mois",
+    "transaction": {
+      "rent": "À louer",
+      "buy": "À vendre"
+    }
+  },
+  "myProperties": {
+    "title": "Mes biens",
+    "subtitle": "Gérez vos annonces immobilières",
+    "createNew": "Créer un nouveau bien",
+    "createFirst": "Créer un bien",
+    "untitled": "Bien sans titre",
+    "noImage": "Pas d'image",
+    "rent": "À louer",
+    "sale": "À vendre",
+    "page": "page",
+    "searchPlaceholder": "Rechercher des biens...",
+    "sortBy": "Trier par",
+    "updating": "Mise à jour...",
+    "showing": "Affichage {{from}}-{{to}} sur {{total}}",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "retry": "Réessayer",
+    "clearFilter": "Effacer le filtre",
+    "stats": {
+      "total": "Tous",
+      "draft": "Brouillons",
+      "pending": "En attente",
+      "approved": "Approuvés",
+      "published": "Publiés",
+      "rejected": "Refusés",
+      "archived": "Archivés"
+    },
+    "status": {
+      "draft": "Brouillon",
+      "pending": "En attente",
+      "approved": "Approuvé",
+      "published": "Publié",
+      "rejected": "Refusé",
+      "archived": "Archivé"
+    },
+    "sort": {
+      "newest": "Plus récent",
+      "oldest": "Plus ancien",
+      "priceHigh": "Prix : élevé à bas",
+      "priceLow": "Prix : bas à élevé",
+      "recentlyUpdated": "Récemment mis à jour"
+    },
+    "actions": {
+      "view": "Voir la page publique",
+      "edit": "Modifier",
+      "submit": "Soumettre pour approbation",
+      "archive": "Archiver",
+      "delete": "Supprimer"
+    },
+    "emptyTitle": "Pas encore de biens",
+    "emptyDescription": "Commencez par créer votre première annonce. Cela ne prend que quelques minutes !",
+    "noFilteredResults": "Aucun bien trouvé pour ce filtre",
+    "tryDifferentFilter": "Essayez un autre filtre ou créez un nouveau bien",
+    "errorTitle": "Impossible de charger les biens",
+    "errorDescription": "Une erreur est survenue. Veuillez réessayer.",
+    "confirmDelete": "Êtes-vous sûr de vouloir supprimer ce bien ? Cette action est irréversible.",
+    "deleteSuccess": "Bien supprimé avec succès",
+    "deleteError": "Échec de la suppression du bien",
+    "submitSuccess": "Bien soumis pour approbation",
+    "submitError": "Échec de la soumission du bien",
+    "confirmArchive": "Êtes-vous sûr de vouloir archiver ce bien ?",
+    "archiveSuccess": "Bien archivé avec succès",
+    "archiveError": "Échec de l'archivage du bien"
+  }
+}

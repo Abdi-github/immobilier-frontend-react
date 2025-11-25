@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Trouvez votre propriété de rêve en Suisse",
+    "subtitle": "Recherchez des milliers de propriétés à louer ou à vendre dans toute la Suisse"
+  },
+  "quickSearch": {
+    "title": "Que recherchez-vous ?",
+    "rentTab": "Louer",
+    "buyTab": "Acheter",
+    "locationPlaceholder": "Lieu (ville, canton)",
+    "categoryPlaceholder": "Type de bien",
+    "searchButton": "Rechercher"
+  },
+  "featured": {
+    "title": "Propriétés en vedette",
+    "subtitle": "Découvrez notre sélection de propriétés exceptionnelles",
+    "viewAll": "Voir toutes les propriétés"
+  },
+  "categories": {
+    "title": "Parcourir par catégorie",
+    "subtitle": "Trouvez le type de propriété idéal pour vos besoins"
+  },
+  "locations": {
+    "title": "Lieux populaires",
+    "subtitle": "Explorez les propriétés dans les régions les plus recherchées de Suisse"
+  },
+  "cityListings": {
+    "title": "Découvrez des biens par ville",
+    "subtitle": "Parcourez l'immobilier dans les villes les plus populaires de Suisse",
+    "toRent": "à louer",
+    "toBuy": "à acheter",
+    "seeMore": "Voir d'autres villes"
+  },
+  "stats": {
+    "properties": "Propriétés",
+    "cities": "Villes",
+    "agencies": "Agences",
+    "happyClients": "Clients satisfaits"
+  },
+  "cta": {
+    "title": "Prêt à trouver votre prochain logement ?",
+    "subtitle": "Commencez votre recherche aujourd'hui et découvrez des propriétés incroyables",
+    "button": "Commencer la recherche"
+  },
+  "whyUs": {
+    "title": "Pourquoi choisir Immobilier.ch ?",
+    "reason1Title": "Large sélection",
+    "reason1Desc": "Des milliers de propriétés d'agences de confiance",
+    "reason2Title": "Recherche facile",
+    "reason2Desc": "Des filtres avancés pour trouver exactement ce dont vous avez besoin",
+    "reason3Title": "Expertise locale",
+    "reason3Desc": "Connaissance approfondie du marché immobilier suisse"
+  }
+}

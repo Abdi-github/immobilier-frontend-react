@@ -1,0 +1,266 @@
+{
+  "dashboard": {
+    "nav": {
+      "profile": "Profile",
+      "favorites": "Favorites",
+      "alerts": "Alerts",
+      "inquiries": "My Inquiries",
+      "settings": "Settings",
+      "myProperties": "My Properties",
+      "createProperty": "Post a Property",
+      "backToSite": "Back to site",
+      "logout": "Log out"
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "description": "Manage your personal information and account settings",
+    "personalInfo": "Personal Information",
+    "personalInfoDescription": "Update your personal details and profile picture",
+    "accountInfo": "Account Information",
+    "accountInfoDescription": "View your account details and status",
+    "editProfile": "Edit Profile",
+    "updateSuccess": "Profile updated successfully",
+    "updateError": "Failed to update profile",
+    "emailVerified": "Verified",
+    "emailReadOnly": "Email cannot be changed",
+    "notProvided": "Not provided",
+    "avatar": {
+      "invalidType": "Please upload an image file",
+      "tooLarge": "Image must be smaller than 5MB",
+      "uploadSuccess": "Profile picture updated",
+      "uploadError": "Failed to upload image"
+    },
+    "fields": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone",
+      "memberSince": "Member Since",
+      "accountStatus": "Account Status",
+      "preferredLanguage": "Preferred Language",
+      "agency": "Agency"
+    },
+    "userType": {
+      "endUser": "Individual",
+      "owner": "Property Owner",
+      "agent": "Agent",
+      "agencyAdmin": "Agency Admin",
+      "platformAdmin": "Platform Admin",
+      "superAdmin": "Super Admin"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    }
+  },
+  "settings": {
+    "title": "Account Settings",
+    "description": "Manage your password, language preferences, and notifications",
+    "language": {
+      "title": "Language Preferences",
+      "description": "Choose your preferred language for the interface and communications",
+      "select": "Interface Language",
+      "updateSuccess": "Language preference updated",
+      "updateError": "Failed to update language"
+    },
+    "password": {
+      "title": "Change Password",
+      "description": "Update your password to keep your account secure",
+      "current": "Current Password",
+      "new": "New Password",
+      "confirm": "Confirm New Password",
+      "change": "Change Password",
+      "requirements": "At least 8 characters with uppercase, lowercase, and number",
+      "changeSuccess": "Password changed successfully",
+      "changeError": "Failed to change password"
+    },
+    "notifications": {
+      "title": "Email Notifications",
+      "description": "Choose what emails you'd like to receive",
+      "newProperties": "New Property Matches",
+      "newPropertiesDesc": "Get notified when new properties match your alerts",
+      "priceChanges": "Price Changes",
+      "priceChangesDesc": "Get notified when prices change on your favorites",
+      "favoritesUpdates": "Favorites Updates",
+      "favoritesUpdatesDesc": "Get notified about updates to your saved properties",
+      "newsletter": "Newsletter",
+      "newsletterDesc": "Receive our weekly newsletter with market insights",
+      "updateSuccess": "Notification preferences updated",
+      "updateError": "Failed to update preferences"
+    },
+    "danger": {
+      "title": "Danger Zone",
+      "description": "Irreversible actions for your account",
+      "deleteAccount": "Delete Account",
+      "deleteConfirmTitle": "Are you absolutely sure?",
+      "deleteConfirmDescription": "This action cannot be undone. This will permanently delete your account and remove all your data from our servers.",
+      "deleteConfirm": "Yes, delete my account"
+    }
+  },
+  "favorites": {
+    "title": "My Favorites",
+    "description": "Properties you've saved for later",
+    "count": "{{count}} saved properties",
+    "count_one": "{{count}} saved property",
+    "count_other": "{{count}} saved properties",
+    "browseMore": "Browse Properties",
+    "viewProperty": "View Property",
+    "savedOn": "Saved on {{date}}",
+    "propertyUnavailable": "No longer available",
+    "removeSuccess": "Property removed from favorites",
+    "removeError": "Failed to remove from favorites",
+    "removeConfirmTitle": "Remove from favorites?",
+    "removeConfirmDescription": "This property will be removed from your saved properties list.",
+    "removeConfirm": "Remove",
+    "empty": {
+      "title": "No favorites yet",
+      "description": "Start saving properties you like to easily find them later",
+      "browseProperties": "Browse Properties"
+    }
+  },
+  "alerts": {
+    "title": "My Alerts",
+    "description": "Get notified when new properties match your criteria",
+    "createNew": "Create Alert",
+    "createTitle": "Create New Alert",
+    "createDescription": "Set up an alert to be notified when new properties match your criteria",
+    "editTitle": "Edit Alert",
+    "editDescription": "Update your alert settings",
+    "createSuccess": "Alert created successfully",
+    "updateSuccess": "Alert updated successfully",
+    "deleteSuccess": "Alert deleted successfully",
+    "activateSuccess": "Alert activated",
+    "pauseSuccess": "Alert paused",
+    "deleteError": "Failed to delete alert",
+    "toggleError": "Failed to update alert",
+    "active": "Active",
+    "paused": "Paused",
+    "status": {
+      "paused": "Paused"
+    },
+    "matchCount": "{{count}} matches",
+    "matchCount_one": "{{count}} match",
+    "matchCount_other": "{{count}} matches",
+    "createdAt": "Created {{date}}",
+    "lastSent": "Last sent {{date}}",
+    "deleteConfirmTitle": "Delete this alert?",
+    "deleteConfirmDescription": "This alert will be permanently deleted and you will no longer receive notifications for it.",
+    "frequency": {
+      "instant": "Instant notifications",
+      "daily": "Daily digest",
+      "weekly": "Weekly digest"
+    },
+    "filters": {
+      "citySet": "City selected",
+      "cantonSet": "Canton selected",
+      "from": "From",
+      "to": "Up to",
+      "rooms": "rooms"
+    },
+    "form": {
+      "name": "Alert Name",
+      "namePlaceholder": "e.g., Apartments in Zurich",
+      "frequency": "Notification Frequency",
+      "selectFrequency": "Select frequency",
+      "filters": "Search Filters",
+      "transactionType": "Transaction Type",
+      "anyTransaction": "Any transaction",
+      "category": "Property Type",
+      "anyCategory": "Any type",
+      "location": "Location",
+      "anyLocation": "Anywhere in Switzerland",
+      "priceMin": "Min Price (CHF)",
+      "priceMax": "Max Price (CHF)",
+      "roomsMin": "Min Rooms",
+      "roomsMax": "Max Rooms",
+      "surfaceMin": "Min Surface (m²)",
+      "surfaceMax": "Max Surface (m²)",
+      "noLimit": "No limit",
+      "create": "Create Alert",
+      "update": "Save Changes"
+    },
+    "empty": {
+      "title": "No alerts yet",
+      "description": "Create an alert to be notified when new properties match your criteria",
+      "createFirst": "Create Your First Alert"
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "previous": "Previous",
+    "next": "Next",
+    "month": "month",
+    "transaction": {
+      "rent": "For Rent",
+      "buy": "For Sale"
+    }
+  },
+  "myProperties": {
+    "title": "My Properties",
+    "subtitle": "Manage your property listings",
+    "createNew": "Create New Property",
+    "createFirst": "Create Property",
+    "untitled": "Untitled Property",
+    "noImage": "No image",
+    "rent": "For Rent",
+    "sale": "For Sale",
+    "page": "page",
+    "searchPlaceholder": "Search properties...",
+    "sortBy": "Sort by",
+    "updating": "Updating...",
+    "showing": "Showing {{from}}-{{to}} of {{total}}",
+    "previous": "Previous",
+    "next": "Next",
+    "retry": "Retry",
+    "clearFilter": "Clear filter",
+    "stats": {
+      "total": "All",
+      "draft": "Drafts",
+      "pending": "Pending",
+      "approved": "Approved",
+      "published": "Published",
+      "rejected": "Rejected",
+      "archived": "Archived"
+    },
+    "status": {
+      "draft": "Draft",
+      "pending": "Pending",
+      "approved": "Approved",
+      "published": "Published",
+      "rejected": "Rejected",
+      "archived": "Archived"
+    },
+    "sort": {
+      "newest": "Newest first",
+      "oldest": "Oldest first",
+      "priceHigh": "Price: High to low",
+      "priceLow": "Price: Low to high",
+      "recentlyUpdated": "Recently updated"
+    },
+    "actions": {
+      "view": "View Public Page",
+      "edit": "Edit",
+      "submit": "Submit for Approval",
+      "archive": "Archive",
+      "delete": "Delete"
+    },
+    "emptyTitle": "No properties yet",
+    "emptyDescription": "Start by creating your first property listing. It only takes a few minutes!",
+    "noFilteredResults": "No properties found for this filter",
+    "tryDifferentFilter": "Try a different filter or create a new property",
+    "errorTitle": "Unable to load properties",
+    "errorDescription": "Something went wrong. Please try again.",
+    "confirmDelete": "Are you sure you want to delete this property? This action cannot be undone.",
+    "deleteSuccess": "Property deleted successfully",
+    "deleteError": "Failed to delete property",
+    "submitSuccess": "Property submitted for approval",
+    "submitError": "Failed to submit property for approval",
+    "confirmArchive": "Are you sure you want to archive this property?",
+    "archiveSuccess": "Property archived successfully",
+    "archiveError": "Failed to archive property"
+  }
+}
