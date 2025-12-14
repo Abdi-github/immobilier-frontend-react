@@ -1,0 +1,50 @@
+# =============================================
+# DOCKER COMPOSE - Immobilier Frontend (React)
+# =============================================
+# Standalone development setup.
+# Requires the API to be running separately.
+# =============================================
+# Usage: docker compose up
+# =============================================
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: immobilier_frontend_dev
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./src:/app/src:cached
+      - ./public:/app/public:cached
+      - ./index.html:/app/index.html:cached
+      - ./vite.config.ts:/app/vite.config.ts:cached
+      - ./tsconfig.json:/app/tsconfig.json:cached
+      - ./tsconfig.app.json:/app/tsconfig.app.json:cached
+      - ./tsconfig.node.json:/app/tsconfig.node.json:cached
+      - ./tailwind.config.ts:/app/tailwind.config.ts:cached
+      - ./postcss.config.js:/app/postcss.config.js:cached
+      - ./components.json:/app/components.json:cached
+      - node_modules:/app/node_modules
+    environment:
+      - VITE_API_BASE_URL=http://localhost:4003/api/v1
+      - VITE_APP_NAME=Immobilier.ch (Dev)
+      - VITE_APP_VERSION=1.0.0
+      - VITE_DEFAULT_LANGUAGE=en
+      - VITE_SUPPORTED_LANGUAGES=en,fr,de,it
+      - VITE_ENABLE_DEV_TOOLS=true
+      - VITE_ENABLE_MOCK_API=false
+      - VITE_CLOUDINARY_CLOUD_NAME=dzyyygr1x
+    networks:
+      - immobilier_network
+
+networks:
+  immobilier_network:
+    external: true
+    name: immobilier_network
+
+volumes:
+  node_modules:
+    name: immobilier_frontend_node_modules_dev
