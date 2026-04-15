@@ -1,0 +1,32 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: immobilier_frontend_react_prod
+    restart: unless-stopped
+    ports:
+      - "5173:80"
+    environment:
+      - NODE_ENV=production
+    networks:
+      - immobilier_network
+      - traefik
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.immobilier-react.rule=Host(`immobilier-react.swiftapp.ch`)"
+      - "traefik.http.routers.immobilier-react.entrypoints=websecure"
+      - "traefik.http.routers.immobilier-react.tls.certresolver=letsencrypt"
+      - "traefik.http.services.immobilier-react.loadbalancer.server.port=80"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+
+networks:
+  immobilier_network:
+    external: true
+  traefik:
+    external: true

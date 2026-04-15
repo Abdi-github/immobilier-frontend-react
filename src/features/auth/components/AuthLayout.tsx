@@ -65,8 +65,7 @@ export function AuthLayout({ children, title, subtitle }: AuthLayoutProps) {
       <header className="bg-white border-b">
         <div className="container mx-auto px-4 py-4">
           <Link to={`/${lang}`} className="flex items-center">
-            <span className="text-2xl font-bold text-primary">immobilier</span>
-            <span className="text-2xl font-bold text-secondary">.ch</span>
+            <img src="/logo.svg" alt="immobilier.ch" className="h-8" />
           </Link>
         </div>
       </header>

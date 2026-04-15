@@ -69,24 +69,7 @@ export function Header() {
       <div className="mx-auto flex h-14 max-w-7xl items-center justify-between px-4">
         {/* Logo - matching immobilier.ch style */}
         <Link to={`/${lang}`} className="flex shrink-0 items-center">
-          <svg width="160" height="32" viewBox="0 0 160 32" className="h-8">
-            <text
-              x="0"
-              y="24"
-              className="fill-[#1a1a2e] text-xl font-bold"
-              style={{ fontFamily: 'system-ui, sans-serif' }}
-            >
-              immobilier
-            </text>
-            <text
-              x="95"
-              y="24"
-              className="fill-primary text-xl font-bold"
-              style={{ fontFamily: 'system-ui, sans-serif' }}
-            >
-              .ch
-            </text>
-          </svg>
+          <img src="/logo.svg" alt="immobilier.ch" className="h-8" />
         </Link>
 
         {/* Center Navigation - main nav items like immobilier.ch */}

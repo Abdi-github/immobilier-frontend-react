@@ -233,9 +233,8 @@ export function DashboardLayout() {
           </Sheet>
 
           {/* Logo */}
-          <Link to={`/${lang}`} className="flex items-center gap-2 font-bold text-xl">
-            <span className="text-primary">immobilier</span>
-            <span>.ch</span>
+          <Link to={`/${lang}`} className="flex items-center">
+            <img src="/logo.svg" alt="immobilier.ch" className="h-8" />
           </Link>
 
           {/* Spacer */}

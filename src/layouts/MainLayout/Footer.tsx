@@ -14,24 +14,7 @@ export function Footer() {
           <div className="space-y-4 lg:col-span-2">
             {/* Logo */}
             <Link to={`/${lang}`} className="inline-block">
-              <svg width="160" height="32" viewBox="0 0 160 32" className="h-8">
-                <text
-                  x="0"
-                  y="24"
-                  className="fill-white text-xl font-bold"
-                  style={{ fontFamily: 'system-ui, sans-serif' }}
-                >
-                  immobilier
-                </text>
-                <text
-                  x="95"
-                  y="24"
-                  className="fill-primary text-xl font-bold"
-                  style={{ fontFamily: 'system-ui, sans-serif' }}
-                >
-                  .ch
-                </text>
-              </svg>
+              <img src="/logo.svg" alt="immobilier.ch" className="h-8 brightness-0 invert" />
             </Link>
 
             {/* Quick links */}
