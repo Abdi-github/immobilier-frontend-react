@@ -34,11 +34,6 @@ ARG VITE_API_BASE_URL
 ARG VITE_APP_NAME
 ARG VITE_DEFAULT_LANGUAGE
 
-# Set environment variables for build
-ENV VITE_API_BASE_URL=${VITE_API_BASE_URL:-https://api.immobilier.ch/api/v1}
-ENV VITE_APP_NAME=${VITE_APP_NAME:-Immobilier.ch}
-ENV VITE_DEFAULT_LANGUAGE=${VITE_DEFAULT_LANGUAGE:-en}
-
 # Build the application
 RUN npm run build
 

@@ -76,25 +76,23 @@ export function Footer() {
 
             {/* App Store buttons */}
             <div className="flex gap-2">
-              <a href="#" className="block">
-                <img
-                  src="/images/appstore.png"
-                  alt="App Store"
-                  className="h-10"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
+              <a
+                href="#"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2 text-xs font-medium text-white/80 transition-colors hover:bg-white/20"
+              >
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
+                </svg>
+                App Store
               </a>
-              <a href="#" className="block">
-                <img
-                  src="/images/playstore.png"
-                  alt="Play Store"
-                  className="h-10"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
+              <a
+                href="#"
+                className="inline-flex items-center gap-1.5 rounded-lg bg-white/10 px-3 py-2 text-xs font-medium text-white/80 transition-colors hover:bg-white/20"
+              >
+                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M3.18 23.04c.17.24.46.38.77.38.14 0 .27-.03.4-.09l8.65-4.33-3.46-3.46-6.36 6.36c-.08.08-.15.17-.2.26-.11.2-.12.51.2.88zM22.04 10.37c-.4-.22-2.16-1.18-2.79-1.52l-3.01 3.01 3.01 3.01c.64-.35 2.39-1.3 2.79-1.52.76-.42.96-.86.96-1.49s-.2-1.07-.96-1.49zM3.01.96c-.1.08-.18.17-.24.26-.22.3-.16.58-.16.92v19.72c0 .33-.06.62.16.92l.08.1 10.2-10.2L3.01.96zm13 10.72l2.51-2.51-8.08-4.41c-.17-.09-.35-.18-.53-.24L6.6 7.83l9.41 3.85z" />
+                </svg>
+                Google Play
               </a>
             </div>
           </div>
