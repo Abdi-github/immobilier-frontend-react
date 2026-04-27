@@ -13,6 +13,8 @@ export interface Canton {
   _id?: string;
   name: MultiLangName;
   code: string;
+  latitude?: number;
+  longitude?: number;
   is_active: boolean;
   created_at?: string;
   updated_at?: string;
@@ -27,6 +29,8 @@ export interface City {
   canton_id: string;
   canton?: Canton;
   image_url?: string;
+  latitude?: number;
+  longitude?: number;
   is_active: boolean;
   created_at?: string;
   updated_at?: string;

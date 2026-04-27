@@ -189,6 +189,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.property-map-marker {
+  display: flex;
+  height: 32px;
+  width: 24px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.property-map-marker__pin {
+  display: flex;
+  height: 24px;
+  width: 24px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 50% 50% 50% 0;
+  background: linear-gradient(180deg, #ff6b87 0%, #ef1d5e 78%);
+  box-shadow: 0 10px 20px rgb(239 29 94 / 0.32);
+  transform: rotate(-45deg);
+}
+
+.property-map-marker__dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 9999px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
 /* =============================================
    Typography
    ============================================= */

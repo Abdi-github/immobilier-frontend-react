@@ -5,6 +5,17 @@
     "noResults": "Aucune propriété trouvée",
     "noResultsMessage": "Essayez d'ajuster vos filtres de recherche"
   },
+  "map": {
+    "selectedCity": "Carte de {{city}}",
+    "selectedCanton": "Carte de {{canton}}",
+    "redPins": "Les propriétés avec coordonnées sont marquées en rouge sur la carte.",
+    "approximateCount_one": "{{count}} repère rouge montre une localisation approximative.",
+    "approximateCount_other": "{{count}} repères rouges montrent des localisations approximatives.",
+    "approximatePostalCode": "Le repère sur la carte montre une localisation approximative au niveau du code postal.",
+    "approximateCity": "Le repère sur la carte montre une localisation approximative au niveau de la ville.",
+    "approximateCanton": "Le repère sur la carte montre une localisation approximative au niveau du canton.",
+    "noLocation": "Localisation non disponible pour cette propriété"
+  },
   "detail": {
     "description": "Description",
     "features": "Caractéristiques",

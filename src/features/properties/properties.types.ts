@@ -1,5 +1,13 @@
 import type { Canton, City, Category } from '@/features/locations/locations.api';
 
+export type PropertyLocationPrecision = 'exact' | 'postal_code' | 'city' | 'canton' | 'unknown';
+
+export type PropertyGeocodingSource =
+  | 'manual'
+  | 'provider'
+  | 'city_centroid'
+  | 'canton_centroid';
+
 export interface PropertyImage {
   id: string;
   _id?: string; // For backward compatibility
@@ -54,6 +62,11 @@ export interface Property {
   canton_id: string;
   canton?: Canton;
   postal_code?: string;
+  latitude?: number;
+  longitude?: number;
+  location_precision?: PropertyLocationPrecision;
+  geocoding_source?: PropertyGeocodingSource;
+  geocoded_at?: string;
   
   // Additional
   proximity?: Record<string, string>;

@@ -69,7 +69,7 @@ npm run dev
 
 | Service  | URL                          |
 | -------- | ---------------------------- |
-| Frontend | http://localhost:5173        |
+| Frontend | http://localhost:5174        |
 | API      | http://localhost:4003/api/v1 |
 
 ## Project Structure

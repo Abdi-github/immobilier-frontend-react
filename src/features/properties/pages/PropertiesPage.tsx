@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { Bell, MapPin, List, ChevronRight, ChevronLeft, Search } from 'lucide-react';
 import { Button } from '@/shared/components/ui/button';
 import { Skeleton } from '@/shared/components/ui/skeleton';
@@ -13,6 +13,7 @@ import {
 } from '@/shared/components/ui/select';
 import { cn } from '@/shared/lib/utils';
 import { PropertyCardGrid } from '../components/PropertyCardGrid';
+import { PropertyMap } from '../components/PropertyMap';
 import { PropertyTypeFilter } from '../components/PropertyTypeFilter';
 import { LocationFilter, SelectedLocation } from '../components/LocationFilter';
 import {
@@ -133,6 +134,68 @@ export function PropertiesPage() {
   // Use 'meta' from API response (the actual field name)
   const pagination = data?.meta;
   const properties = data?.data || [];
+  const fallbackMapLocation = (() => {
+    const firstProperty = properties[0];
+
+    if (!firstProperty) {
+      return undefined;
+    }
+
+    if (searchParams.get('city_id') && firstProperty.city) {
+      return {
+        id: firstProperty.city.id || firstProperty.city_id,
+        name: getLocalizedName(firstProperty.city.name, lang),
+        type: 'city' as const,
+        postalCode: firstProperty.postal_code,
+        cantonCode: firstProperty.canton?.code,
+      };
+    }
+
+    if (searchParams.get('canton_id') && firstProperty.canton) {
+      return {
+        id: firstProperty.canton.id || firstProperty.canton_id,
+        name: getLocalizedName(firstProperty.canton.name, lang),
+        type: 'canton' as const,
+        cantonCode: firstProperty.canton.code,
+      };
+    }
+
+    return undefined;
+  })();
+  const mappableProperties = properties.filter(
+    (property) => typeof property.latitude === 'number' && typeof property.longitude === 'number'
+  );
+  const selectedMapLocation =
+    selectedLocations.find((location) => location.type === 'city') ||
+    selectedLocations.find((location) => location.type === 'canton') ||
+    fallbackMapLocation;
+  const approximateMarkerCount = mappableProperties.filter(
+    (property) =>
+      property.location_precision === 'postal_code' ||
+      property.location_precision === 'city' ||
+      property.location_precision === 'canton'
+  ).length;
+  const showDesktopMap = Boolean(selectedMapLocation) && mappableProperties.length > 0;
+  const firstMappableProperty = mappableProperties[0];
+  const mapCenter =
+    mappableProperties.length === 1 && firstMappableProperty
+      ? {
+          lat: firstMappableProperty.latitude as number,
+          lng: firstMappableProperty.longitude as number,
+        }
+      : {
+          lat:
+            mappableProperties.reduce((sum, property) => sum + (property.latitude ?? 0), 0) /
+            mappableProperties.length,
+          lng:
+            mappableProperties.reduce((sum, property) => sum + (property.longitude ?? 0), 0) /
+            mappableProperties.length,
+        };
+  const mapMarkers = mappableProperties.map((property) => ({
+    lat: property.latitude as number,
+    lng: property.longitude as number,
+    title: property.title?.trim() ? property.title : property.address,
+  }));
 
   // Handlers
   const handleTransactionChange = (type: 'rent' | 'buy') => {
@@ -447,13 +510,21 @@ export function PropertiesPage() {
                 <List className="h-4 w-4" />
                 {t('properties:list.listView', 'List')}
               </button>
-              <Link
-                to={`/${lang}/properties/map`}
-                className="flex items-center gap-1 text-sm text-gray-500 hover:text-primary"
-              >
-                <MapPin className="h-4 w-4" />
-                {t('properties:list.map', 'Map')}
-              </Link>
+              {showDesktopMap ? (
+                <span className="flex items-center gap-1 text-sm font-medium text-primary">
+                  <MapPin className="h-4 w-4" />
+                  {t('properties:list.map', 'Map')}
+                </span>
+              ) : (
+                <button
+                  type="button"
+                  className="flex cursor-not-allowed items-center gap-1 text-sm text-gray-400"
+                  disabled
+                >
+                  <MapPin className="h-4 w-4" />
+                  {t('properties:list.map', 'Map')}
+                </button>
+              )}
             </div>
 
             {/* Sort */}
@@ -488,149 +559,186 @@ export function PropertiesPage() {
 
       {/* Main content - full width, no sidebar, 3 columns on large screens */}
       <div className="mx-auto max-w-7xl px-4 py-6">
-        {/* Location breadcrumb/title */}
-        <h2 className="mb-4 text-sm text-gray-600">
-          {transactionType === 'rent'
-            ? t('properties:list.rentIn', 'Rent in Switzerland')
-            : t('properties:list.buyIn', 'Buy in Switzerland')}
-        </h2>
+        <div className={cn('grid gap-8', showDesktopMap && 'lg:grid-cols-[minmax(0,1fr)_360px]')}>
+          <div>
+            {/* Location breadcrumb/title */}
+            <h2 className="mb-4 text-sm text-gray-600">
+              {transactionType === 'rent'
+                ? t('properties:list.rentIn', 'Rent in Switzerland')
+                : t('properties:list.buyIn', 'Buy in Switzerland')}
+            </h2>
 
-        {/* Loading state */}
-        {isLoading && (
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {[...Array(9)].map((_, i) => (
-              <div key={i} className="overflow-hidden rounded-lg bg-white shadow-sm">
-                <Skeleton className="aspect-4/3 w-full" />
-                <div className="space-y-3 p-4">
-                  <Skeleton className="h-6 w-32" />
-                  <Skeleton className="h-4 w-48" />
-                  <Skeleton className="h-4 w-40" />
-                  <div className="flex gap-4 pt-2">
-                    <Skeleton className="h-4 w-16" />
-                    <Skeleton className="h-4 w-16" />
+            {/* Loading state */}
+            {isLoading && (
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {[...Array(9)].map((_, i) => (
+                  <div key={i} className="overflow-hidden rounded-lg bg-white shadow-sm">
+                    <Skeleton className="aspect-4/3 w-full" />
+                    <div className="space-y-3 p-4">
+                      <Skeleton className="h-6 w-32" />
+                      <Skeleton className="h-4 w-48" />
+                      <Skeleton className="h-4 w-40" />
+                      <div className="flex gap-4 pt-2">
+                        <Skeleton className="h-4 w-16" />
+                        <Skeleton className="h-4 w-16" />
+                      </div>
+                    </div>
                   </div>
-                </div>
+                ))}
               </div>
-            ))}
-          </div>
-        )}
-
-        {/* Error state */}
-        {isError && (
-          <div className="rounded-lg border border-red-200 bg-red-50 p-8 text-center">
-            <p className="text-red-600">
-              {t('common:errors.loadFailed', 'Failed to load properties')}
-            </p>
-            <Button variant="outline" className="mt-4" onClick={() => window.location.reload()}>
-              {t('common:actions.retry', 'Retry')}
-            </Button>
-          </div>
-        )}
-
-        {/* Properties grid - 3 columns on large screens like immobilier.ch */}
-        {!isLoading && !isError && properties.length > 0 && (
-          <div
-            className={cn(
-              'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3',
-              isFetching && 'opacity-60'
             )}
-          >
-            {properties.map((property) => (
-              <PropertyCardGrid
-                key={property.id}
-                property={property}
-                onFavorite={toggleFavorite}
-                isFavorite={isFavorite(property.id)}
-              />
-            ))}
-          </div>
-        )}
 
-        {/* Empty state */}
-        {!isLoading && !isError && properties.length === 0 && (
-          <div className="rounded-lg bg-white p-12 text-center shadow-sm">
-            <Search className="mx-auto h-12 w-12 text-gray-400" />
-            <h3 className="mt-4 text-lg font-semibold text-gray-900">
-              {t('properties:list.noResults', 'No properties found')}
-            </h3>
-            <p className="mt-2 text-gray-600">
-              {t('properties:list.noResultsHint', 'Try adjusting your search criteria')}
-            </p>
-          </div>
-        )}
+            {/* Error state */}
+            {isError && (
+              <div className="rounded-lg border border-red-200 bg-red-50 p-8 text-center">
+                <p className="text-red-600">
+                  {t('common:errors.loadFailed', 'Failed to load properties')}
+                </p>
+                <Button variant="outline" className="mt-4" onClick={() => window.location.reload()}>
+                  {t('common:actions.retry', 'Retry')}
+                </Button>
+              </div>
+            )}
 
-        {/* Email alert banner - after first page results */}
-        {!isLoading && properties.length > 0 && pagination && pagination.page === 1 && (
-          <div className="my-6 flex items-center justify-between rounded-lg bg-[#1a1a2e] p-4 text-white">
-            <div className="flex items-center gap-3">
-              <Bell className="h-5 w-5" />
-              <span className="text-sm">
-                {t('properties:list.alertBanner.subtitle', 'Receive new properties by email')}
-              </span>
-            </div>
-            <Button size="sm" className="bg-white text-[#1a1a2e] hover:bg-gray-100">
-              {t('properties:list.alertBanner.cta', 'Create your e-mail alert')}
-            </Button>
-          </div>
-        )}
-
-        {/* Pagination */}
-        {pagination && pagination.totalPages > 1 && (
-          <div className="mt-8 flex flex-col items-center gap-4">
-            <div className="flex items-center gap-1">
-              {/* Previous button */}
-              <Button
-                variant="ghost"
-                size="sm"
-                disabled={!pagination.hasPrevPage}
-                onClick={() => handlePageChange(pagination.page - 1)}
+            {/* Properties grid - 3 columns on large screens like immobilier.ch */}
+            {!isLoading && !isError && properties.length > 0 && (
+              <div
+                className={cn(
+                  'grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3',
+                  isFetching && 'opacity-60'
+                )}
               >
-                <ChevronLeft className="h-4 w-4" />
-              </Button>
+                {properties.map((property) => (
+                  <PropertyCardGrid
+                    key={property.id}
+                    property={property}
+                    onFavorite={toggleFavorite}
+                    isFavorite={isFavorite(property.id)}
+                  />
+                ))}
+              </div>
+            )}
 
-              {/* Page numbers */}
-              {getPageNumbers().map((pageNum, idx) =>
-                pageNum === '...' ? (
-                  <span key={`dots-${idx}`} className="px-2 text-gray-400">
-                    ...
+            {/* Empty state */}
+            {!isLoading && !isError && properties.length === 0 && (
+              <div className="rounded-lg bg-white p-12 text-center shadow-sm">
+                <Search className="mx-auto h-12 w-12 text-gray-400" />
+                <h3 className="mt-4 text-lg font-semibold text-gray-900">
+                  {t('properties:list.noResults', 'No properties found')}
+                </h3>
+                <p className="mt-2 text-gray-600">
+                  {t('properties:list.noResultsHint', 'Try adjusting your search criteria')}
+                </p>
+              </div>
+            )}
+
+            {/* Email alert banner - after first page results */}
+            {!isLoading && properties.length > 0 && pagination && pagination.page === 1 && (
+              <div className="my-6 flex items-center justify-between rounded-lg bg-[#1a1a2e] p-4 text-white">
+                <div className="flex items-center gap-3">
+                  <Bell className="h-5 w-5" />
+                  <span className="text-sm">
+                    {t('properties:list.alertBanner.subtitle', 'Receive new properties by email')}
                   </span>
-                ) : (
+                </div>
+                <Button size="sm" className="bg-white text-[#1a1a2e] hover:bg-gray-100">
+                  {t('properties:list.alertBanner.cta', 'Create your e-mail alert')}
+                </Button>
+              </div>
+            )}
+
+            {/* Pagination */}
+            {pagination && pagination.totalPages > 1 && (
+              <div className="mt-8 flex flex-col items-center gap-4">
+                <div className="flex items-center gap-1">
                   <Button
-                    key={pageNum}
-                    variant={pagination.page === pageNum ? 'default' : 'ghost'}
+                    variant="ghost"
                     size="sm"
-                    onClick={() => handlePageChange(pageNum as number)}
-                    className={cn(
-                      'min-w-8',
-                      pagination.page === pageNum && 'bg-primary text-white'
-                    )}
+                    disabled={!pagination.hasPrevPage}
+                    onClick={() => handlePageChange(pagination.page - 1)}
                   >
-                    {pageNum}
+                    <ChevronLeft className="h-4 w-4" />
                   </Button>
-                )
-              )}
 
-              {/* Next button */}
-              <Button
-                variant="ghost"
-                size="sm"
-                disabled={!pagination.hasNextPage}
-                onClick={() => handlePageChange(pagination.page + 1)}
-              >
-                <span className="mr-1">{t('common:pagination.next', 'Next')}</span>
-                <ChevronRight className="h-4 w-4" />
-              </Button>
-            </div>
+                  {getPageNumbers().map((pageNum, idx) =>
+                    pageNum === '...' ? (
+                      <span key={`dots-${idx}`} className="px-2 text-gray-400">
+                        ...
+                      </span>
+                    ) : (
+                      <Button
+                        key={pageNum}
+                        variant={pagination.page === pageNum ? 'default' : 'ghost'}
+                        size="sm"
+                        onClick={() => handlePageChange(pageNum as number)}
+                        className={cn(
+                          'min-w-8',
+                          pagination.page === pageNum && 'bg-primary text-white'
+                        )}
+                      >
+                        {pageNum}
+                      </Button>
+                    )
+                  )}
 
-            {/* Page indicator */}
-            <p className="text-sm text-gray-500">
-              {t('properties:list.pageIndicator', 'Page {{current}} on {{total}}', {
-                current: pagination.page,
-                total: pagination.totalPages,
-              })}
-            </p>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    disabled={!pagination.hasNextPage}
+                    onClick={() => handlePageChange(pagination.page + 1)}
+                  >
+                    <span className="mr-1">{t('common:pagination.next', 'Next')}</span>
+                    <ChevronRight className="h-4 w-4" />
+                  </Button>
+                </div>
+
+                <p className="text-sm text-gray-500">
+                  {t('properties:list.pageIndicator', 'Page {{current}} on {{total}}', {
+                    current: pagination.page,
+                    total: pagination.totalPages,
+                  })}
+                </p>
+              </div>
+            )}
           </div>
-        )}
+
+          {showDesktopMap && selectedMapLocation && (
+            <aside className="hidden lg:block">
+              <div className="sticky top-24 overflow-hidden rounded-2xl border border-gray-200 bg-white p-4 shadow-sm">
+                <div className="mb-4">
+                  <h2 className="text-lg font-semibold text-gray-900">
+                    {selectedMapLocation.type === 'city'
+                      ? t('properties:map.selectedCity', { city: selectedMapLocation.name })
+                      : t('properties:map.selectedCanton', { canton: selectedMapLocation.name })}
+                  </h2>
+                  {pagination && (
+                    <p className="mt-1 text-sm text-gray-500">
+                      {t('properties:list.resultsRange', '{{start}}-{{end}} of {{total}} properties found', {
+                        start: (pagination.page - 1) * pagination.limit + 1,
+                        end: Math.min(pagination.page * pagination.limit, pagination.total),
+                        total: pagination.total.toLocaleString('de-CH'),
+                      })}
+                    </p>
+                  )}
+                  <p className="mt-2 text-sm text-rose-700">{t('properties:map.redPins')}</p>
+                  {approximateMarkerCount > 0 && (
+                    <p className="mt-1 text-sm text-rose-700">
+                      {t('properties:map.approximateCount', { count: approximateMarkerCount })}
+                    </p>
+                  )}
+                </div>
+
+                <PropertyMap
+                  lat={mapCenter.lat}
+                  lng={mapCenter.lng}
+                  zoom={11}
+                  height="560px"
+                  markers={mapMarkers}
+                />
+              </div>
+            </aside>
+          )}
+        </div>
       </div>
     </div>
   );

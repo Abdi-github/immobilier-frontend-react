@@ -37,6 +37,14 @@ export function PropertyDetailPage() {
 
   const property = propertyData?.data;
   const images = imagesData?.data || property?.images || [];
+  const locationPrecisionMessage =
+    property?.location_precision === 'postal_code'
+      ? t('properties:map.approximatePostalCode')
+      : property?.location_precision === 'city'
+        ? t('properties:map.approximateCity')
+        : property?.location_precision === 'canton'
+          ? t('properties:map.approximateCanton')
+          : null;
 
   if (isLoading) {
     return (
@@ -243,12 +251,18 @@ export function PropertyDetailPage() {
                 )}
               </div>
 
+              {locationPrecisionMessage && (
+                <div className="mt-4 rounded-lg border border-rose-100 bg-rose-50 px-3 py-2 text-sm text-rose-700">
+                  {locationPrecisionMessage}
+                </div>
+              )}
+
               {/* Map */}
               <div className="mt-6">
                 <PropertyMap
+                  lat={property.latitude}
+                  lng={property.longitude}
                   address={property.address}
-                  city={property.city ? getLocalizedName(property.city.name, lang) : undefined}
-                  canton={property.canton?.code}
                 />
               </div>
             </div>

@@ -43,6 +43,14 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
 
   const currentImage = sortedImages[currentIndex];
 
+  const previewImages = sortedImages
+    .slice(1, Math.min(sortedImages.length, 3))
+    .map((image, previewOffset) => {
+      const index = (currentIndex + previewOffset + 1) % sortedImages.length;
+      return { image: sortedImages[index], index };
+    });
+  const hiddenImagesCount = Math.max(0, sortedImages.length - 1 - previewImages.length);
+
   if (!currentImage) {
     return (
       <div className="flex aspect-video items-center justify-center rounded-xl bg-muted">
@@ -53,67 +61,142 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
 
   return (
     <>
-      {/* Main gallery */}
-      <div className="space-y-4">
-        {/* Main image */}
-        <div className="group relative overflow-hidden rounded-xl bg-muted">
-          <img
-            src={currentImage.url}
-            alt={currentImage.alt_text || `${title} - Image ${currentIndex + 1}`}
-            className="aspect-video w-full cursor-pointer object-cover transition-transform duration-300 group-hover:scale-105"
-            onClick={() => setIsLightboxOpen(true)}
-          />
+      <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
+        <div className="relative md:hidden">
+          <div className="aspect-[16/11] overflow-hidden bg-gray-100">
+            <img
+              src={currentImage.url}
+              alt={currentImage.alt_text || `${title} - Image ${currentIndex + 1}`}
+              className="h-full w-full cursor-pointer object-cover"
+              onClick={() => setIsLightboxOpen(true)}
+            />
+          </div>
 
-          {/* Navigation arrows */}
           {sortedImages.length > 1 && (
             <>
+              <div className="absolute inset-x-0 top-3 flex items-center justify-between px-3">
+                <div className="rounded-full bg-black/55 px-2.5 py-1 text-xs font-medium text-white">
+                  {currentIndex + 1} / {sortedImages.length}
+                </div>
+              </div>
+
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white"
+                className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-black/45 text-white hover:bg-black/60 hover:text-white"
                 onClick={goToPrevious}
               >
-                <ChevronLeft className="h-6 w-6" />
+                <ChevronLeft className="h-5 w-5" />
               </Button>
               <Button
                 variant="ghost"
                 size="icon"
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm hover:bg-white"
+                className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-black/45 text-white hover:bg-black/60 hover:text-white"
                 onClick={goToNext}
               >
-                <ChevronRight className="h-6 w-6" />
+                <ChevronRight className="h-5 w-5" />
               </Button>
+
+              <div className="absolute inset-x-0 bottom-3 flex justify-center gap-1.5 px-3">
+                {sortedImages.map((image, index) => (
+                  <button
+                    key={image.id}
+                    type="button"
+                    className={cn(
+                      'h-1.5 rounded-full transition-all',
+                      index === currentIndex ? 'w-6 bg-white' : 'w-2 bg-white/45'
+                    )}
+                    onClick={() => setCurrentIndex(index)}
+                  />
+                ))}
+              </div>
             </>
           )}
+        </div>
 
-          {/* Zoom button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className="absolute right-4 top-4 bg-white/80 backdrop-blur-sm hover:bg-white"
-            onClick={() => setIsLightboxOpen(true)}
+        <div className="hidden gap-1 md:grid md:grid-cols-[minmax(0,2.1fr)_minmax(260px,1fr)]">
+          <div className="relative min-h-[430px] overflow-hidden bg-gray-100">
+            <img
+              src={currentImage.url}
+              alt={currentImage.alt_text || `${title} - Image ${currentIndex + 1}`}
+              className="h-full w-full cursor-pointer object-cover"
+              onClick={() => setIsLightboxOpen(true)}
+            />
+
+            {sortedImages.length > 1 && (
+              <div className="absolute inset-x-0 top-0 flex items-center justify-between p-4">
+                <div className="rounded-full bg-black/55 px-3 py-1.5 text-sm font-medium text-white">
+                  {currentIndex + 1} / {sortedImages.length}
+                </div>
+                <div className="flex items-center gap-2">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full bg-black/45 text-white hover:bg-black/60 hover:text-white"
+                    onClick={goToPrevious}
+                  >
+                    <ChevronLeft className="h-5 w-5" />
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full bg-black/45 text-white hover:bg-black/60 hover:text-white"
+                    onClick={goToNext}
+                  >
+                    <ChevronRight className="h-5 w-5" />
+                  </Button>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full bg-black/45 text-white hover:bg-black/60 hover:text-white"
+                    onClick={() => setIsLightboxOpen(true)}
+                  >
+                    <ZoomIn className="h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <div
+            className={cn(
+              'grid gap-1',
+              previewImages.length > 1 ? 'grid-rows-2' : 'grid-rows-1'
+            )}
           >
-            <ZoomIn className="h-5 w-5" />
-          </Button>
+            {previewImages.map((preview, index) => (
+              <button
+                key={preview.image.id}
+                type="button"
+                className="group relative overflow-hidden bg-gray-100 text-left"
+                onClick={() => setCurrentIndex(preview.index)}
+              >
+                <img
+                  src={preview.image.url}
+                  alt={preview.image.alt_text || `Preview ${index + 1}`}
+                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+                />
 
-          {/* Image counter */}
-          <div className="absolute bottom-4 left-4 rounded-full bg-black/60 px-3 py-1 text-sm text-white">
-            {currentIndex + 1} / {sortedImages.length}
+                {index === previewImages.length - 1 && hiddenImagesCount > 0 && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/45 text-2xl font-semibold text-white">
+                    +{hiddenImagesCount}
+                  </div>
+                )}
+              </button>
+            ))}
           </div>
         </div>
 
-        {/* Thumbnails */}
         {sortedImages.length > 1 && (
-          <div className="flex gap-2 overflow-x-auto pb-2">
+          <div className="flex gap-2 overflow-x-auto border-t border-gray-100 px-3 py-3">
             {sortedImages.map((image, index) => (
               <button
                 key={image.id}
+                type="button"
                 onClick={() => setCurrentIndex(index)}
                 className={cn(
-                  'relative h-20 w-28 shrink-0 overflow-hidden rounded-lg transition-all',
-                  index === currentIndex
-                    ? 'ring-2 ring-primary ring-offset-2'
-                    : 'opacity-70 hover:opacity-100'
+                  'h-16 w-24 shrink-0 overflow-hidden rounded-xl border-2 transition-colors',
+                  index === currentIndex ? 'border-primary' : 'border-transparent'
                 )}
               >
                 <img

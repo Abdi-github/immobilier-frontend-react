@@ -26,6 +26,17 @@
   "sort": {
     "placeholder": "Sort by"
   },
+  "map": {
+    "selectedCity": "{{city}} map",
+    "selectedCanton": "{{canton}} map",
+    "redPins": "Properties with coordinates are marked in red on the map.",
+    "approximateCount_one": "{{count}} red pin shows an approximate location.",
+    "approximateCount_other": "{{count}} red pins show approximate locations.",
+    "approximatePostalCode": "The map pin shows an approximate postal-code-level location.",
+    "approximateCity": "The map pin shows an approximate city-level location.",
+    "approximateCanton": "The map pin shows an approximate canton-level location.",
+    "noLocation": "Location not available for this property"
+  },
   "sortOptions": {
     "newest": "Newest first",
     "oldest": "Oldest first",

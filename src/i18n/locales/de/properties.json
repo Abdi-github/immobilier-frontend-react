@@ -5,6 +5,17 @@
     "noResults": "Keine Immobilien gefunden",
     "noResultsMessage": "Versuchen Sie, Ihre Suchfilter anzupassen"
   },
+  "map": {
+    "selectedCity": "Karte von {{city}}",
+    "selectedCanton": "Karte von {{canton}}",
+    "redPins": "Immobilien mit Koordinaten sind auf der Karte rot markiert.",
+    "approximateCount_one": "{{count}} roter Marker zeigt einen ungefähren Standort.",
+    "approximateCount_other": "{{count}} rote Marker zeigen ungefähre Standorte.",
+    "approximatePostalCode": "Der Kartenmarker zeigt einen ungefähren Standort auf Postleitzahl-Ebene.",
+    "approximateCity": "Der Kartenmarker zeigt einen ungefähren Standort auf Stadtebene.",
+    "approximateCanton": "Der Kartenmarker zeigt einen ungefähren Standort auf Kantonsebene.",
+    "noLocation": "Standort für diese Immobilie nicht verfügbar"
+  },
   "detail": {
     "description": "Beschreibung",
     "features": "Merkmale",

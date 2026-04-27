@@ -1,106 +1,137 @@
-/**
- * Property Map Component
- * Renders a Leaflet map with property location marker.
- * Uses OpenStreetMap tiles (free, no API key needed).
- */
-
 import { useEffect, useRef } from 'react';
 import { MapPin } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/shared/components/ui/card';
 import { useTranslation } from 'react-i18next';
+import { cn } from '@/shared/lib/utils';
 
 // Leaflet CSS is imported in globals.css
 import L from 'leaflet';
 
-// Fix Leaflet default icon issue with bundlers
-import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
-import markerIcon from 'leaflet/dist/images/marker-icon.png';
-import markerShadow from 'leaflet/dist/images/marker-shadow.png';
-
-delete (L.Icon.Default.prototype as Record<string, unknown>)._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl: markerIcon2x,
-  iconUrl: markerIcon,
-  shadowUrl: markerShadow,
+const redMarkerIcon = L.divIcon({
+  className: 'property-map-marker-icon',
+  html: [
+    '<span class="property-map-marker">',
+    '<span class="property-map-marker__pin">',
+    '<span class="property-map-marker__dot"></span>',
+    '</span>',
+    '</span>',
+  ].join(''),
+  iconSize: [24, 32],
+  iconAnchor: [12, 30],
+  popupAnchor: [0, -28],
 });
 
 interface PropertyMapProps {
-  /** Latitude */
   lat?: number;
-  /** Longitude */
   lng?: number;
-  /** Address text to display in popup */
+  zoom?: number;
+  height?: string;
+  markers?: Array<{
+    lat: number;
+    lng: number;
+    title?: string;
+    price?: string;
+  }>;
   address?: string;
-  /** CSS class */
   className?: string;
 }
 
-export function PropertyMap({ lat, lng, address, className }: PropertyMapProps) {
+export function PropertyMap({
+  lat,
+  lng,
+  zoom = 14,
+  height = '320px',
+  markers = [],
+  address,
+  className,
+}: PropertyMapProps) {
   const { t } = useTranslation('properties');
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstanceRef = useRef<L.Map | null>(null);
+  const markerLayerRef = useRef<L.FeatureGroup | null>(null);
+  const hasCoordinates = typeof lat === 'number' && typeof lng === 'number';
+  const markersToRender =
+    markers.length > 0 ? markers : hasCoordinates ? [{ lat, lng, title: address }] : [];
 
   useEffect(() => {
-    if (!mapRef.current || !lat || !lng) return;
+    if (!mapRef.current) return;
 
-    // Don't recreate if already exists
-    if (mapInstanceRef.current) {
-      mapInstanceRef.current.setView([lat, lng], 14);
+    if (markersToRender.length === 0) {
+      markerLayerRef.current?.remove();
+      markerLayerRef.current = null;
+      mapInstanceRef.current?.remove();
+      mapInstanceRef.current = null;
       return;
     }
 
-    const map = L.map(mapRef.current).setView([lat, lng], 14);
+    if (!mapInstanceRef.current) {
+      const map = L.map(mapRef.current).setView([markersToRender[0].lat, markersToRender[0].lng], zoom);
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-      maxZoom: 19,
-    }).addTo(map);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 19,
+      }).addTo(map);
 
-    const marker = L.marker([lat, lng]).addTo(map);
-    if (address) {
-      marker.bindPopup(`<strong>${address}</strong>`);
+      mapInstanceRef.current = map;
+      markerLayerRef.current = L.featureGroup().addTo(map);
     }
 
-    mapInstanceRef.current = map;
+    const map = mapInstanceRef.current;
+    const markerLayer = markerLayerRef.current;
 
+    if (!map || !markerLayer) return;
+
+    markerLayer.clearLayers();
+
+    markersToRender.forEach((markerConfig) => {
+      const marker = L.marker([markerConfig.lat, markerConfig.lng], { icon: redMarkerIcon });
+      if (markerConfig.title || markerConfig.price) {
+        marker.bindPopup(
+          `<strong>${markerConfig.title ?? ''}</strong>${markerConfig.price ? `<br>${markerConfig.price}` : ''}`
+        );
+      }
+      marker.addTo(markerLayer);
+    });
+
+    if (markersToRender.length > 1) {
+      map.fitBounds(markerLayer.getBounds(), {
+        padding: [24, 24],
+        maxZoom: zoom,
+      });
+    } else {
+      map.setView([markersToRender[0].lat, markersToRender[0].lng], zoom);
+    }
+
+    setTimeout(() => map.invalidateSize(), 0);
+  }, [address, markersToRender, zoom]);
+
+  useEffect(() => {
     return () => {
-      map.remove();
+      markerLayerRef.current?.remove();
+      markerLayerRef.current = null;
+      mapInstanceRef.current?.remove();
       mapInstanceRef.current = null;
     };
-  }, [lat, lng, address]);
+  }, []);
 
-  if (!lat || !lng) {
+  if (markersToRender.length === 0) {
     return (
-      <Card className={className}>
-        <CardHeader>
-          <CardTitle className="flex items-center gap-2">
-            <MapPin className="h-5 w-5" />
-            {t('map.title', 'Location')}
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="flex h-48 items-center justify-center rounded-lg bg-muted">
-            <p className="text-sm text-muted-foreground">
-              {t('map.noLocation', 'Location not available for this property')}
-            </p>
-          </div>
-        </CardContent>
-      </Card>
+      <div className={cn('flex h-48 items-center justify-center rounded-xl bg-muted', className)}>
+        <p className="text-sm text-muted-foreground">
+          {t('map.noLocation', 'Location not available for this property')}
+        </p>
+      </div>
     );
   }
 
   return (
-    <Card className={className}>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <MapPin className="h-5 w-5" />
-          {t('map.title', 'Location')}
-        </CardTitle>
-      </CardHeader>
-      <CardContent>
-        <div ref={mapRef} className="h-72 w-full rounded-lg" />
-        {address && <p className="mt-2 text-sm text-muted-foreground">{address}</p>}
-      </CardContent>
-    </Card>
+    <div className={cn('w-full overflow-hidden rounded-xl', className)}>
+      <div ref={mapRef} data-testid="property-map" className="w-full rounded-xl" style={{ height }} />
+      {address && markers.length <= 1 && (
+        <div className="mt-2 flex items-center gap-2 text-sm text-muted-foreground">
+          <MapPin className="h-4 w-4" />
+          <span>{address}</span>
+        </div>
+      )}
+    </div>
   );
 }

@@ -5,6 +5,17 @@
     "noResults": "Nessuna proprietà trovata",
     "noResultsMessage": "Prova a modificare i filtri di ricerca"
   },
+  "map": {
+    "selectedCity": "Mappa di {{city}}",
+    "selectedCanton": "Mappa di {{canton}}",
+    "redPins": "Le proprietà con coordinate sono contrassegnate in rosso sulla mappa.",
+    "approximateCount_one": "{{count}} indicatore rosso mostra una posizione approssimativa.",
+    "approximateCount_other": "{{count}} indicatori rossi mostrano posizioni approssimative.",
+    "approximatePostalCode": "L'indicatore sulla mappa mostra una posizione approssimativa a livello di codice postale.",
+    "approximateCity": "L'indicatore sulla mappa mostra una posizione approssimativa a livello di città.",
+    "approximateCanton": "L'indicatore sulla mappa mostra una posizione approssimativa a livello di cantone.",
+    "noLocation": "Posizione non disponibile per questa proprietà"
+  },
   "detail": {
     "description": "Descrizione",
     "features": "Caratteristiche",
