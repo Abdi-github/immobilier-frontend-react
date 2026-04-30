@@ -148,16 +148,21 @@ export function LocationFilter({
                       <span className="text-gray-500">({location.cantonCode})</span>
                     )}
                     {location.type === 'canton' && <span className="text-gray-500">(Canton)</span>}
-                    <button
-                      type="button"
+                    <span
+                      aria-label={t('filters.removeLocation', 'Remove location')}
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                      }}
                       onClick={(e) => {
+                        e.preventDefault();
                         e.stopPropagation();
                         handleRemoveLocation(location.id);
                       }}
-                      className="ml-0.5 rounded-full p-0.5 hover:bg-primary/20"
+                      className="ml-0.5 inline-flex rounded-full p-0.5 hover:bg-primary/20"
                     >
                       <X className="h-3 w-3" />
-                    </button>
+                    </span>
                   </span>
                 ))}
                 <span className="flex items-center gap-1 text-xs text-gray-400">
