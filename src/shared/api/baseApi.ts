@@ -8,7 +8,9 @@ import type { RootState } from '@/app/store';
 export const baseApi = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: import.meta.env.VITE_API_BASE_URL || 'http://localhost:4003/api/v1',
+    baseUrl: import.meta.env.PROD
+      ? '/api/v1'
+      : (import.meta.env.VITE_API_BASE_URL || 'http://localhost:4003/api/v1'),
     prepareHeaders: (headers, { getState }) => {
       const state = getState() as RootState;
 
