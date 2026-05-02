@@ -151,7 +151,10 @@ export function PropertyDetailPage() {
         </div>
 
         {/* Image gallery */}
-        <PropertyGallery images={images} title={property.title} />
+        
+        <div className="h-96 overflow-hidden">
+          <PropertyGallery images={images} title={property.title} />
+        </div>
 
         {/* Main content */}
         <div className="mt-8 grid gap-8 lg:grid-cols-3">
