@@ -152,7 +152,7 @@ export function PropertyDetailPage() {
 
         {/* Image gallery */}
         
-        <div className="h-96 overflow-hidden">
+        <div className="h-140">
           <PropertyGallery images={images} title={property.title} />
         </div>
 

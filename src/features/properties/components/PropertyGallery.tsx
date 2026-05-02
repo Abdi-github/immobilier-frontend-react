@@ -187,7 +187,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
           </div>
         </div>
 
-        {sortedImages.length > 1 && (
+        {/* {sortedImages.length > 1 && (
           <div className="flex gap-2 overflow-x-auto border-t border-gray-100 px-3 py-3">
             {sortedImages.map((image, index) => (
               <button
@@ -207,7 +207,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
               </button>
             ))}
           </div>
-        )}
+        )} */}
       </div>
 
       {/* Lightbox */}
