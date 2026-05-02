@@ -92,7 +92,7 @@ export function PropertyDetailPage() {
       />
       {/* Breadcrumb */}
       <div className="border-b bg-white">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto  max-w-7xl px-4 py-3 text-sm text-gray-500 flex items-center gap-2">
           <nav className="flex items-center gap-2 text-sm text-muted-foreground">
             <Link to={`/${i18n.language}`} className="hover:text-primary">
               {t('common:nav.home')}
@@ -107,12 +107,12 @@ export function PropertyDetailPage() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto  max-w-7xl px-4 py-8">
         {/* Header */}
         <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <div className="flex flex-wrap items-center gap-2">
-              <Badge variant={property.transaction_type === 'rent' ? 'secondary' : 'default'}>
+              <Badge variant={property.transaction_type === 'rent' ? 'primary' : 'default'}>
                 {t(`common:transaction.${property.transaction_type}`)}
               </Badge>
               {property.category && (
